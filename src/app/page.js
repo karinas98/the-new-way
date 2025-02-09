@@ -1,101 +1,291 @@
+"use client";
+import Nav from "./components/nav";
 import Image from "next/image";
+import Link from "next/link";
+import Arrow from "@/app/assets/arrow.png";
+import GetInTouch from "./components/get-in-touch";
+import FAQSection from "./components/faq-home-section";
+import ClientReviews from "./components/client-reviews";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <main>
+      <div className="relative bg-[url('./assets/home-hero.jpeg')] bg-cover bg-center lg:bg-left h-screen">
+        <Nav />
+        <div className="flex flex-col ">
+          <section className="h-screen flex flex-col bg-black bg-opacity-35 lg:bg-transparent justify-center px-[45px] md:pl-[85px]  ">
+            <h1 className=" text-[52px] text-white  leading-[60px] md:text-title font-normal lg:text-orange w-full md:w-[90%] lg:w-[50%] xl:w-[35%] 2xl:w-[40%] xl:text-[55px] xl:leading-[70px]">
+              Better AI choices start with better guidance
+            </h1>
+          </section>
+          <section className="flex flex-col items-center relative -mt-[300px] md:-mt-52">
+            <div className="bg-lightblue hidden md:w-[800px] h-[80px] rounded-full absolute opacity-90"></div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            <div className="md:flex md:gap-10 md:justify-center md:p-10 md:relative hidden">
+              <Link href="/#what-we-offer">
+                <button className="w-[220px] bg-white text-[14px] text-orange py-2 px-4 rounded-full shadow-sm hover:before:bg-orange relative overflow-hidden  shadow-md transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-orange before:transition-all before:duration-500  hover:text-white hover:shadow-orange hover:before:left-0 hover:before:w-full">
+                  <span className="relative z-10 font-semibold">
+                    IMPLEMENTATION & STRATEGY SUPPORT
+                  </span>
+                </button>
+              </Link>
+              <Link href="/#what-we-offer">
+                <button className="w-[220px]  bg-white text-[14px] text-orange py-2 px-4 rounded-full shadow-sm hover:before:bg-orange relative overflow-hidden  shadow-md transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-orange before:transition-all before:duration-500  hover:text-white hover:shadow-orange hover:before:left-0 hover:before:w-full">
+                  <span className="relative z-10 font-semibold">
+                    RESULTS FOCUSED SOLUTIONS
+                  </span>
+                </button>
+              </Link>
+              <Link href="/#what-we-offer">
+                <button className="w-[220px] bg-white text-[14px] text-orange py-2 px-4 rounded-full shadow-sm hover:before:bg-orange relative overflow-hidden  shadow-md transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-orange before:transition-all before:duration-500  hover:text-white hover:shadow-orange hover:before:left-0 hover:before:w-full">
+                  <span className="relative z-10 font-semibold">
+                    ETHICAL AI <br /> ADVISORY
+                  </span>
+                </button>
+              </Link>
+            </div>
+          </section>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+      </div>
+      <section className=" pl-[90px] pr-[80px] lg:w-[55%]  h-full w-[90%] pt-32 pb-32 md:pb-10  ">
+        <div>
+          <h2 className="text-secondaryheadline font-extrabold text-orange">
+            WHO WE ARE
+          </h2>
+          <p className="pt-5">
+            We’re a forward-thinking AI consultancy dedicated to helping
+            businesses navigate the complexities of AI adoption with clarity and
+            confidence. <br /> <br />
+            Our mission is to help you approach AI’s potential with practical
+            solutions and strategies that drive results, saves time, and
+            enhances efficiency and productivity across your business
+            operations.
+          </p>
+        </div>
+        <div className="mt-[100px]">
+          <h2 className="text-secondaryheadline font-extrabold text-orange">
+            WHY WE DO THIS
+          </h2>
+          <p className="pt-5">
+            AI has the potential to transform industries, but knowing where to
+            begin and how to integrate it into your organisation can be a
+            challenge. Every business, regardless of technical expertise, should
+            have the opportunity to explore what AI can offer.
+            <br />
+            <br /> We focus on providing ethical, vendor-agnostic guidance to
+            help overcome the common challenges—whether it’s understanding
+            regulations, managing data complexities, training teams, clarifying
+            ROI, or creating a thoughtful plan to get started. <br />
+            <br />
+            Our aim is to make AI practical and meaningful, helping
+            organisations keep pace in a rapidly evolving technological world.
+          </p>
+        </div>
+        <button
+          src="/who-we-are"
+          className=" mt-10 bg-orange text-[14px] text-lightblue font-bold py-4 px-10 hover:bg-white hover:border-2 hover:border-orange hover:text-orange rounded-full shadow-sm"
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          GET IN TOUCH
+        </button>
+      </section>
+      <section
+        id="what-we-offer"
+        className=" bg-lightblue pr-[80px] pt-32 md:mt-32"
+      >
+        <h2 className=" pl-[70px] md:pl-[90px] text-secondaryheadline font-extrabold text-orange">
+          WHAT WE OFFER
+        </h2>
+        <div className=" pl-[70px] md:pl-[90px] flex flex-col md:flex-row md:gap-20 items-start">
+          <div className="md:mb-10 w-full  md:w-[50%] lg:w-full ">
+            <div className=" mt-7 ">
+              <h3 className="text-orange font-semibold">
+                Tailored AI Solutions
+              </h3>
+
+              <p>
+                We design strategies that align with your unique goals,
+                industry, and operational needs, ensuring AI enhances your
+                business without disrupting it.
+              </p>
+              <hr className="mt-3" />
+            </div>
+            <div className=" mt-3">
+              <h3 className="text-orange font-semibold">
+                Human-Centered Approach
+              </h3>
+              <p>
+                Our solutions prioritise people, balancing technological
+                advancements with ethical considerations and change management
+                to foster trust and adoption.
+              </p>
+              <hr className="mt-5" />
+            </div>
+            <div className=" mt-3">
+              <h3 className="text-orange font-semibold">
+                Vendor-Agnostic Guidance
+              </h3>
+              <p>
+                We recommend the best tools and platforms for your needs, done
+                by thourough research and eval, to deliver maximum value and
+                ROI.
+              </p>
+              <hr className="mt-3" />
+            </div>
+          </div>
+          <div className="w-full md:w-[50%] lg:w-full">
+            <div className=" mt-3 md:mt-7">
+              <h3 className="text-orange font-semibold">
+                Simplifying Complexity
+              </h3>
+              <p>
+                We simplify AI with clear, actionable insights and step-by-step
+                support, making advanced technology accessible and
+                understandable.
+              </p>
+              <hr className="mt-3" />
+            </div>
+            <div className=" mt-3">
+              <h3 className="text-orange font-semibold">
+                Ethical and Regulatory Focus
+              </h3>
+              <p>
+                We ensure responsible AI integration by addressing governance,
+                compliance, and ethical standards upfront. Adhering to GDPR,
+                CCPA, HIPPA and more, we help businesses adopt AI confidently
+                and sustainably.
+              </p>
+              <hr className="mt-3" />
+            </div>
+          </div>
+        </div>
+
+        <button
+          src="/what-we-offer"
+          className="ml-[90px] mt-20 bg-orange text-[14px] text-lightblue font-bold py-4 px-10 hover:bg-white hover:border-2 hover:border-orange hover:text-orange rounded-full shadow-sm"
         >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+          LEARN MORE
+        </button>
+        <div className=" bg-[url('./assets/ways-graphic.png')] bg-cover bg-center h-[500px] w-screen"></div>
+      </section>
+      <section className=" flex flex-col justify-center ">
+        <div className="flex flex-col md:flex-row justify-between pt-20  lg:pr-[150px] md:pr-[40px] ">
+          <h2 className="pl-[70px] md:pl-[90px] text-secondaryheadline font-extrabold text-orange">
+            OUR PACKAGES
+          </h2>
+          <p className="md:w-[60%] w-[85%] pl-[70px] md:pl-0">
+            We offer tailored packages designed to guide businesses through
+            every stage of AI adoption—whether you're just starting or ready to
+            scale. From quick-win assessments to comprehensive implementation
+            and governance strategies, our solutions address your unique
+            challenges.
+          </p>
+        </div>
+        <div className="xl:pl-[80px] pl-[20px] pr-[20px] gap-5 mt-32 text-center flex flex-col md:flex-row justify-center items-center gap-10 pb-[100px]">
+          <div className="w-[300px] h-[400px] md:h-[430px] lg:h-[400px] flex flex-col justify-between text-white rounded-lg bg-orange p-5">
+            <div>
+              <h3 className="font-bold my-4 ">THE IGNITION</h3>
+              <p className="font-light">AI Readiness Assessment</p>
+              <hr className="my-2" />
+              <p className="font-light">
+                Tailored recommendations for quick wins
+              </p>
+            </div>
+            <div className="flex justify-end">
+              <Link
+                className=" flex items-center gap-5 text-sm font-light "
+                href="/what-we-do#ignition"
+              >
+                MORE DETAILS
+                <Image
+                  alt="more details"
+                  src={Arrow}
+                  className="w-[20px] lg:w-[30px]"
+                />
+              </Link>
+            </div>
+          </div>
+          <div className="w-[300px] h-[400px] md:h-[430px] lg:h-[400px] flex flex-col justify-between text-white rounded-lg bg-orange p-5">
+            <div>
+              <h3 className="font-bold my-4 ">THE NAVIGATOR</h3>
+              <p className="font-light">AI Readiness Assessment</p>
+              <hr className="my-2" />
+              <p className="font-light">Vendor-Agnostic Solution Guidance </p>
+              <hr className="my-2" />
+              <p className="font-light">Change Management Strategy </p>
+            </div>
+            <div className="flex justify-end">
+              <Link
+                className="flex items-center gap-5 text-sm font-light"
+                href="/what-we-do#navigator"
+              >
+                MORE DETAILS
+                <Image
+                  alt="more details"
+                  src={Arrow}
+                  className="w-[20px] lg:w-[30px]"
+                />
+              </Link>
+            </div>
+          </div>
+          <div className="w-[300px] h-[400px] md:h-[430px] lg:h-[400px] flex flex-col justify-between text-white rounded-lg bg-orange p-5">
+            <div>
+              <h3 className="font-bold my-4 ">THE INTEGRATOR</h3>
+              <p className="font-light">AI Readiness Assessment</p>
+              <hr className="my-2" />
+              <p className="font-light">Vendor-Agnostic Solution Guidance </p>
+              <hr className="my-2" />
+              <p className="font-light">Change Management Strategy </p>
+              <hr className="my-2" />
+              <p className="font-light">
+                Governance & Ethical AI Advisory and Training
+              </p>
+            </div>
+            <div className="flex justify-end">
+              <Link
+                className="flex items-center gap-5 text-sm font-light "
+                href="/what-we-do#integrator"
+              >
+                MORE DETAILS
+                <Image alt="more details" src={Arrow} className="w-[30px]" />
+              </Link>
+            </div>
+          </div>
+          <div className="w-[300px] h-[400px] md:h-[430px] lg:h-[400px] flex flex-col justify-between text-white rounded-lg bg-orange p-5">
+            <div>
+              <h3 className="font-bold my-4 ">THE AGENT</h3>
+              <p className="font-light">
+                End-to-end project management and bespoke AI solutions tailored
+                to unique business needs
+              </p>
+            </div>
+            <div className="flex justify-end">
+              <Link
+                className="flex items-center gap-5 text-sm font-light "
+                href="/what-we-do#agent"
+              >
+                MORE DETAILS
+                <Image
+                  alt="more details"
+                  src={Arrow}
+                  className="w-[20px] lg:w-[30px]"
+                />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="pt-20 bg-lightblue md:mt-[80px] ">
+        <h2 className="text-orange text-secondaryheadline font-extrabold pl-[90px] ">
+          WHAT OUR CLIENTS SAY
+        </h2>
+        <ClientReviews />
+      </section>
+      <section>
+        <FAQSection />
+      </section>
+      <section>
+        <GetInTouch />
+      </section>
+    </main>
   );
 }
