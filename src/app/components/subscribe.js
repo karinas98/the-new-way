@@ -18,6 +18,7 @@ export default function Subscribe() {
         </p>
         <div className="relative w-[400px] h-[50px]">
           <input placeholder="EMAIL" className="mt-8  p-4 w-full " />
+
           <Image
             src={OrangeArrow}
             alt="Submit and Subscribe"

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import OrangeArrow from "@/app/assets/orange-arrow.png";
 
 export default function GetInTouch() {
@@ -18,12 +19,13 @@ export default function GetInTouch() {
           </p>
         </div>
         <div className="flex justify-end pt-10">
-          <Image
-            alt="Go to contact page"
-            href="/contact"
-            src={OrangeArrow}
-            className="w-[40px]"
-          />
+          <Link href="/contact">
+            <Image
+              alt="Go to contact page"
+              src={OrangeArrow}
+              className="w-[40px]"
+            />
+          </Link>
         </div>
       </div>
     </section>

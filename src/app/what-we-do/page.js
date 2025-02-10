@@ -100,12 +100,11 @@ export default function WhatWeDo() {
             </div>
           </div>
           <div className="flex w-full justify-center md:justify-end">
-            <button
-              href="/contact"
-              className=" flex  mt-10 bg-orange text-[14px] text-lightblue hover:bg-white hover:border-2 hover:border-orange hover:text-orange font-bold py-4 px-10 rounded-full shadow-sm"
-            >
-              BOOK A SPOT
-            </button>
+            <Link href="/contact">
+              <button className=" flex  mt-10 bg-orange text-[14px] text-lightblue hover:bg-white hover:border-2 hover:border-orange hover:text-orange font-bold py-4 px-10 rounded-full shadow-sm">
+                BOOK A SPOT
+              </button>
+            </Link>
           </div>
           <div
             id="navigator"
@@ -183,12 +182,11 @@ export default function WhatWeDo() {
           </div>
 
           <div className="flex w-full justify-center md:justify-end">
-            <button
-              href="/contact"
-              className=" flex hover:bg-white hover:border-2 hover:border-orange hover:text-orange  mt-10 bg-orange text-[14px] text-lightblue font-bold py-4 px-10 rounded-full shadow-sm"
-            >
-              BOOK A SPOT
-            </button>
+            <Link href="/contact">
+              <button className=" flex hover:bg-white hover:border-2 hover:border-orange hover:text-orange  mt-10 bg-orange text-[14px] text-lightblue font-bold py-4 px-10 rounded-full shadow-sm">
+                BOOK A SPOT
+              </button>
+            </Link>
           </div>
         </div>
         <div>
@@ -269,12 +267,11 @@ export default function WhatWeDo() {
             </div>
           </div>
           <div className="flex w-full justify-center md:justify-end">
-            <button
-              href="/contact"
-              className=" flex hover:bg-white hover:border-2 hover:border-orange hover:text-orange  mt-10 bg-orange text-[14px] text-lightblue font-bold py-4 px-10 rounded-full shadow-sm"
-            >
-              BOOK A SPOT
-            </button>
+            <Link href="/contact">
+              <button className=" flex hover:bg-white hover:border-2 hover:border-orange hover:text-orange  mt-10 bg-orange text-[14px] text-lightblue font-bold py-4 px-10 rounded-full shadow-sm">
+                BOOK A SPOT
+              </button>
+            </Link>
           </div>
         </div>
         <div>
@@ -360,12 +357,11 @@ export default function WhatWeDo() {
             </div>
           </div>
           <div className="flex w-full justify-center md:justify-end">
-            <button
-              href="/contact"
-              className=" flex hover:bg-white hover:border-2 hover:border-orange hover:text-orange  mt-10 bg-orange text-[14px] text-lightblue font-bold py-4 px-10 rounded-full shadow-sm"
-            >
-              BOOK A SPOT
-            </button>
+            <Link href="/contact">
+              <button className=" flex hover:bg-white hover:border-2 hover:border-orange hover:text-orange  mt-10 bg-orange text-[14px] text-lightblue font-bold py-4 px-10 rounded-full shadow-sm">
+                BOOK A SPOT
+              </button>
+            </Link>
           </div>
         </div>
       </section>

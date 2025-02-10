@@ -81,12 +81,11 @@ export default function Home() {
             organisations keep pace in a rapidly evolving technological world.
           </p>
         </div>
-        <button
-          href="/who-we-are"
-          className=" mt-10 bg-orange text-[14px] text-lightblue font-bold py-4 px-10 hover:bg-white hover:border-2 hover:border-orange hover:text-orange rounded-full shadow-sm"
-        >
-          GET IN TOUCH
-        </button>
+        <Link href="/who-we-are">
+          <button className=" mt-10 bg-orange text-[14px] text-lightblue font-bold py-4 px-10 hover:bg-white hover:border-2 hover:border-orange hover:text-orange rounded-full shadow-sm">
+            GET IN TOUCH
+          </button>
+        </Link>
       </section>
       <section
         id="what-we-offer"
@@ -158,13 +157,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        <button
-          href="/what-we-offer"
-          className="ml-[90px] mt-20 bg-orange text-[14px] text-lightblue font-bold py-4 px-10 hover:bg-white hover:border-2 hover:border-orange hover:text-orange rounded-full shadow-sm"
-        >
-          LEARN MORE
-        </button>
+        <Link href="/what-we-offer">
+          <button className="ml-[90px] mt-20 bg-orange text-[14px] text-lightblue font-bold py-4 px-10 hover:bg-white hover:border-2 hover:border-orange hover:text-orange rounded-full shadow-sm">
+            LEARN MORE
+          </button>
+        </Link>
         <div className=" bg-[url('./assets/ways-graphic.png')] bg-cover bg-center h-[500px] w-screen"></div>
       </section>
       <section className=" flex flex-col justify-center ">
