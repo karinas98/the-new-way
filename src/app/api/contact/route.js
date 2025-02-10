@@ -1,31 +1,21 @@
-import nodemailer from "nodemailer";
+"use client";
+
+import { Resend } from "resend";
 
 export async function POST(req) {
   try {
     const data = await req.json();
     console.log("✅ Form data received:", data);
 
-    const transporter = nodemailer.createTransport({
-      host: "smtp.gmail.com",
-      port: 465,
-      secure: true,
-      auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
-      },
-    });
+    const resend = new Resend(process.env.RESEND_API_KEY);
 
-    const mailOptions = {
-      from: "karina.savoie@new-way.ai", // Ensure this is your Gmail address
-      to: process.env.EMAIL_USER, // Send to yourself (check spam)
+    const emailResponse = await resend.emails.send({
+      from: "noreply@yourdomain.com", // Replace with your verified domain email
+      to: "karina.savoie@new-way.ai",
       subject: "New Contact Form Submission",
       text: `Name: ${data.first_name} ${data.last_name}\nCompany: ${data.company}\nEmail: ${data.email}\nMessage: ${data.message}`,
-    };
+    });
 
-    console.log("🚀 Sending email...");
-
-    // Send email and capture response
-    const emailResponse = await transporter.sendMail(mailOptions);
     console.log("✅ Email sent successfully:", emailResponse);
 
     return new Response(
