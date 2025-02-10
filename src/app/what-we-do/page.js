@@ -1,6 +1,7 @@
+"use client";
 import GetInTouch from "../components/get-in-touch";
 import Nav from "../components/nav";
-
+import Link from "next/link";
 import CarouselWithBanner from "../components/scrolling-banner";
 
 export default function WhatWeDo() {
