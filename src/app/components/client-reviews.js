@@ -2,8 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import kalroLogo from "@/app/assets/kalro-white-logo.png";
-import talentLogo from "@/app/assets/logo-beige.png";
-import entLogo from "@/app/assets/ent-clinic-logo.png";
+import entLogo from "@/app/assets/london-ent-clinic.png";
 
 export default function ClientReviews() {
   const reviews = [
@@ -14,13 +13,7 @@ export default function ClientReviews() {
       clientLink: "https://www.kalrocapital.com/",
       style: "self-start translate-y-10",
     },
-    {
-      quote:
-        "Working with The New Way helped us refine our AI strategy and implement automation that saves time and improves efficiency. Their expertise made the transition seamless.",
-      logo: talentLogo,
-      clientLink: "https://www.kalrocapital.com/",
-      style: "self-center translate-y-10",
-    },
+
     {
       quote:
         "The New Way helped us stay organized and efficient. Keeping track of patient information and managing schedules is now seamless. With AI-powered transcription and insights, we can automatically capture key details, determine next steps, and streamline meetings. This allows us to focus more on our patients while reducing administrative workload and improving overall accuracy.",

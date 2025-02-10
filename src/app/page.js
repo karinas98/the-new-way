@@ -82,7 +82,7 @@ export default function Home() {
           </p>
         </div>
         <button
-          src="/who-we-are"
+          href="/who-we-are"
           className=" mt-10 bg-orange text-[14px] text-lightblue font-bold py-4 px-10 hover:bg-white hover:border-2 hover:border-orange hover:text-orange rounded-full shadow-sm"
         >
           GET IN TOUCH
@@ -160,7 +160,7 @@ export default function Home() {
         </div>
 
         <button
-          src="/what-we-offer"
+          href="/what-we-offer"
           className="ml-[90px] mt-20 bg-orange text-[14px] text-lightblue font-bold py-4 px-10 hover:bg-white hover:border-2 hover:border-orange hover:text-orange rounded-full shadow-sm"
         >
           LEARN MORE

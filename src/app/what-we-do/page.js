@@ -101,7 +101,7 @@ export default function WhatWeDo() {
           </div>
           <div className="flex w-full justify-center md:justify-end">
             <button
-              src="/contact"
+              href="/contact"
               className=" flex  mt-10 bg-orange text-[14px] text-lightblue hover:bg-white hover:border-2 hover:border-orange hover:text-orange font-bold py-4 px-10 rounded-full shadow-sm"
             >
               BOOK A SPOT
@@ -184,7 +184,7 @@ export default function WhatWeDo() {
 
           <div className="flex w-full justify-center md:justify-end">
             <button
-              src="/contact"
+              href="/contact"
               className=" flex hover:bg-white hover:border-2 hover:border-orange hover:text-orange  mt-10 bg-orange text-[14px] text-lightblue font-bold py-4 px-10 rounded-full shadow-sm"
             >
               BOOK A SPOT
@@ -270,7 +270,7 @@ export default function WhatWeDo() {
           </div>
           <div className="flex w-full justify-center md:justify-end">
             <button
-              src="/contact"
+              href="/contact"
               className=" flex hover:bg-white hover:border-2 hover:border-orange hover:text-orange  mt-10 bg-orange text-[14px] text-lightblue font-bold py-4 px-10 rounded-full shadow-sm"
             >
               BOOK A SPOT
@@ -361,7 +361,7 @@ export default function WhatWeDo() {
           </div>
           <div className="flex w-full justify-center md:justify-end">
             <button
-              src="/contact"
+              href="/contact"
               className=" flex hover:bg-white hover:border-2 hover:border-orange hover:text-orange  mt-10 bg-orange text-[14px] text-lightblue font-bold py-4 px-10 rounded-full shadow-sm"
             >
               BOOK A SPOT
