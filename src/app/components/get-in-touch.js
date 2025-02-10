@@ -10,7 +10,7 @@ export default function GetInTouch() {
           <h2 className="text-orange text-secondaryheadline leading-8 mb-10 font-extrabold ">
             DISCOVER WHAT'S POSSIBLE
           </h2>
-          <p>
+          <p className="text-black mt-4 text-sm md:text-md lg:text-lg w-full max-w-lg">
             Got questions about AI or ideas you want to bring to life? Let’s
             chat! <br />
             <br />

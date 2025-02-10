@@ -4,13 +4,13 @@ import cutGraphic from "@/app/assets/ways-graphic-cut.png";
 
 export default function Subscribe() {
   return (
-    <section className="bg-lightblue flex flex-col md:flex-row items-center justify-between py-10 px-6 md:px-16 lg:px-32">
+    <section className="bg-lightblue pl-[40px] pr-[40px] flex flex-col md:flex-row items-center justify-between py-10 px-6 md:px-16 lg:px-32">
       {/* Left Content */}
       <div className="w-full md:w-1/2 flex flex-col items-start text-left">
         <h2 className="text-orange text-2xl md:text-secondaryheadline font-extrabold">
           STAY IN THE LOOP
         </h2>
-        <p className="mt-4 text-sm md:text-base  lg:text-lg w-full max-w-lg">
+        <p className="mt-4 text-sm md:text-md text-black  lg:text-lg w-full max-w-lg">
           Subscribe to get the latest updates on AI news, tips, and tools
           straight to your inbox. <br /> <br />
           Be the first to know when we release free templates, resources, and
