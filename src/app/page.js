@@ -157,7 +157,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <Link href="/what-we-offer">
+        <Link href="/what-we-do">
           <button className="ml-[90px] mt-20 bg-orange text-[14px] text-lightblue font-bold py-4 px-10 hover:bg-white hover:border-2 hover:border-orange hover:text-orange rounded-full shadow-sm">
             LEARN MORE
           </button>
