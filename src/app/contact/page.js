@@ -26,6 +26,7 @@ export default function ContactForm() {
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
+        netflify,
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
@@ -53,12 +54,7 @@ export default function ContactForm() {
           LET’S GET THE CONVERSATION STARTED
         </h1>
         <div className="flex mt-20 lg:w-[90%] xl:w-[40%] 2xl:w-[30%] flex-col">
-          <form
-            onSubmit={handleSubmit}
-            name="contact"
-            data-netlify="true"
-            className=" space-y-4"
-          >
+          <form onSubmit={handleSubmit} name="contact" className=" space-y-4">
             <div className="flex space-x-4">
               <input
                 type="text"

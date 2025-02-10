@@ -47,7 +47,7 @@ export default function Home() {
           </section>
         </div>
       </div>
-      <section className=" pl-[90px] pr-[80px] lg:w-[55%]  h-full w-[90%] pt-32 pb-32 md:pb-10  ">
+      <section className=" pl-[40px] md:pl-[90px] pr-[30px] md:pr-[80px] lg:w-[55%]  h-full w-[90%] pt-32 pb-32 md:pb-10  ">
         <div>
           <h2 className="text-secondaryheadline font-extrabold text-orange">
             WHO WE ARE
@@ -91,13 +91,13 @@ export default function Home() {
         id="what-we-offer"
         className=" bg-lightblue pr-[80px] pt-32 md:mt-32"
       >
-        <h2 className=" pl-[70px] md:pl-[90px] text-secondaryheadline font-extrabold text-orange">
+        <h2 className=" pl-[40px] md:pl-[90px] text-secondaryheadline font-extrabold text-orange">
           WHAT WE OFFER
         </h2>
-        <div className=" pl-[70px] md:pl-[90px] flex flex-col md:flex-row md:gap-20 items-start">
+        <div className=" pl-[40px] md:pl-[90px] flex flex-col md:flex-row md:gap-20 items-start">
           <div className="md:mb-10 w-full  md:w-[50%] lg:w-full ">
             <div className=" mt-7 ">
-              <h3 className="text-orange font-semibold">
+              <h3 className="text-orange mb-2 text-[18px] font-semibold">
                 Tailored AI Solutions
               </h3>
 
@@ -109,7 +109,7 @@ export default function Home() {
               <hr className="mt-3" />
             </div>
             <div className=" mt-3">
-              <h3 className="text-orange font-semibold">
+              <h3 className="text-orange mb-2 text-[18px] font-semibold">
                 Human-Centered Approach
               </h3>
               <p>
@@ -120,7 +120,7 @@ export default function Home() {
               <hr className="mt-5" />
             </div>
             <div className=" mt-3">
-              <h3 className="text-orange font-semibold">
+              <h3 className="text-orange mb-2 text-[18px] font-semibold">
                 Vendor-Agnostic Guidance
               </h3>
               <p>
@@ -133,7 +133,7 @@ export default function Home() {
           </div>
           <div className="w-full md:w-[50%] lg:w-full">
             <div className=" mt-3 md:mt-7">
-              <h3 className="text-orange font-semibold">
+              <h3 className="text-orange mb-2 text-[18px] font-semibold">
                 Simplifying Complexity
               </h3>
               <p>
@@ -144,7 +144,7 @@ export default function Home() {
               <hr className="mt-3" />
             </div>
             <div className=" mt-3">
-              <h3 className="text-orange font-semibold">
+              <h3 className="text-orange mb-2 text-[18px] font-semibold">
                 Ethical and Regulatory Focus
               </h3>
               <p>
@@ -153,7 +153,6 @@ export default function Home() {
                 CCPA, HIPPA and more, we help businesses adopt AI confidently
                 and sustainably.
               </p>
-              <hr className="mt-3" />
             </div>
           </div>
         </div>
@@ -166,10 +165,10 @@ export default function Home() {
       </section>
       <section className=" flex flex-col justify-center ">
         <div className="flex flex-col md:flex-row justify-between pt-20  lg:pr-[150px] md:pr-[40px] ">
-          <h2 className="pl-[70px] md:pl-[90px] text-secondaryheadline font-extrabold text-orange">
+          <h2 className="pl-[40px] md:pl-[90px] text-secondaryheadline font-extrabold text-orange">
             OUR PACKAGES
           </h2>
-          <p className="md:w-[60%] w-[85%] pl-[70px] md:pl-0">
+          <p className="md:w-[60%] w-[85%] pl-[40px] md:pl-0">
             We offer tailored packages designed to guide businesses through
             every stage of AI adoption—whether you're just starting or ready to
             scale. From quick-win assessments to comprehensive implementation
@@ -272,7 +271,7 @@ export default function Home() {
         </div>
       </section>
       <section className="pt-20 bg-lightblue md:mt-[80px] ">
-        <h2 className="text-orange text-secondaryheadline font-extrabold pl-[90px] ">
+        <h2 className="text-orange text-secondaryheadline font-extrabold text-center md:text-left md:pl-[90px] ">
           WHAT OUR CLIENTS SAY
         </h2>
         <ClientReviews />

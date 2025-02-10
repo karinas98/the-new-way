@@ -7,7 +7,7 @@ export default function GetInTouch() {
     <section className="md:h-[420px] lg:pt-32 mb-32 pt-[100px] ">
       <div className="lg:w-[48%] XL:w-[42%] md:w-[50%] bg-lightblue flex flex-col mx-[20px] md:ml-[90px] p-10 rounded-lg  ">
         <div>
-          <h2 className="text-orange text-secondaryheadline font-extrabold ">
+          <h2 className="text-orange text-secondaryheadline leading-8 mb-10 font-extrabold ">
             DISCOVER WHAT'S POSSIBLE
           </h2>
           <p>

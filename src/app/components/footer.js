@@ -19,7 +19,7 @@ export default function Footer() {
           />
         </Link>
         <div
-          className="flex gap-4 pr-10
+          className="flex  gap-2 md:gap-4 md:pr-10
          "
         >
           <Link href="https://www.linkedin.com/in/karina-savoie/">
