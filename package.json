@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@netlify/next": "^1.4.9",
     "@next/font": "^14.2.15",
     "next": "15.1.5",
     "nodemailer": "^6.10.0",
