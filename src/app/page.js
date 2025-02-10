@@ -52,7 +52,7 @@ export default function Home() {
           <h2 className="text-secondaryheadline font-extrabold text-orange">
             WHO WE ARE
           </h2>
-          <p className="pt-5">
+          <p className="pt-5 text-black">
             We’re a forward-thinking AI consultancy dedicated to helping
             businesses navigate the complexities of AI adoption with clarity and
             confidence. <br /> <br />

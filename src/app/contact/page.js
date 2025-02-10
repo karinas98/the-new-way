@@ -39,7 +39,8 @@ export default function ContactForm() {
           company: "",
           email: "",
           message: "",
-        }); // ✅ Reset form state
+        });
+        console.log(formData);
       } else {
         const errorData = await response.json();
         setStatusMessage(`Error: ${errorData.error || "Submission failed"}`);

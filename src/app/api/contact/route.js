@@ -15,12 +15,11 @@ export async function POST(req) {
 
     const mailOptions = {
       from: data.email,
-      to: process.env.GMAIL_USER,
+      to: process.env.EMAIL_USER,
       subject: "New Contact Form Submission",
       text: `Name: ${data.first_name} ${data.last_name}\nCompany: ${data.company}\nEmail: ${data.email}\nMessage: ${data.message}`,
     };
 
-    // Send email
     await transporter.sendMail(mailOptions);
 
     return new Response(
