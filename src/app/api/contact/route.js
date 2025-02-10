@@ -16,7 +16,7 @@ export async function POST(req) {
     });
 
     const mailOptions = {
-      from: "noreply@yourdomain.com", // Ensure this is your Gmail address
+      from: "karina.savoie@new-way.ai", // Ensure this is your Gmail address
       to: process.env.EMAIL_USER, // Send to yourself (check spam)
       subject: "New Contact Form Submission",
       text: `Name: ${data.first_name} ${data.last_name}\nCompany: ${data.company}\nEmail: ${data.email}\nMessage: ${data.message}`,
