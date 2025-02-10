@@ -29,7 +29,7 @@ export default function ClientReviews() {
         {reviews.map((review, index) => (
           <div
             key={index}
-            className={`bg-orange p-16 rounded-[100px] md:rounded-[150px] shadow-lg flex flex-col items-center text-center max-w-lg h-[500px] md:h-[520px] relative transition-all duration-500 ease-in-out ${review.style} hover:translate-y-0 hover:w-[95%]`}
+            className={`bg-orange mx-10 p-16 rounded-[100px] md:rounded-[150px] shadow-lg flex flex-col items-center text-center max-w-lg h-[500px] md:h-[520px] relative transition-all duration-500 ease-in-out ${review.style} hover:translate-y-0 hover:w-[95%]`}
           >
             <p className="text-md md:text-md font-light text-lightblue w-[280px] mx-auto flex-1 flex items-center">
               "{review.quote}"

@@ -53,7 +53,12 @@ export default function ContactForm() {
           LET’S GET THE CONVERSATION STARTED
         </h1>
         <div className="flex mt-20 lg:w-[90%] xl:w-[40%] 2xl:w-[30%] flex-col">
-          <form onSubmit={handleSubmit} className=" space-y-4">
+          <form
+            onSubmit={handleSubmit}
+            name="contact"
+            data-netlify="true"
+            className=" space-y-4"
+          >
             <div className="flex space-x-4">
               <input
                 type="text"
