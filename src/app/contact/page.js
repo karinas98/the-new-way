@@ -11,6 +11,9 @@ export default function ContactForm() {
     message: "",
   });
 
+  const [statusMessage, setStatusMessage] = useState("");
+  const [statusType, setStatusType] = useState("");
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -20,16 +23,25 @@ export default function ContactForm() {
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries());
 
-    const response = await fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    });
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
 
-    if (response.ok) {
-      alert("Email sent successfully!");
-    } else {
-      alert("Error sending email.");
+      if (response.ok) {
+        setStatusMessage("Submitted, Thank you for your interest!");
+        setStatusType("success");
+        e.target.reset();
+      } else {
+        const errorData = await response.json();
+        setStatusMessage(`Error: ${errorData.error || "Submission failed"}`);
+        setStatusType("error");
+      }
+    } catch (error) {
+      setStatusMessage("Network error. Please try again.");
+      setStatusType("error");
     }
   };
 

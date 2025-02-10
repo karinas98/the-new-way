@@ -15,7 +15,7 @@ export async function POST(req) {
 
     const mailOptions = {
       from: data.email,
-      to: "karina.savoie@new-way.ai",
+      to: process.env.GMAIL_USER,
       subject: "New Contact Form Submission",
       text: `Name: ${data.first_name} ${data.last_name}\nCompany: ${data.company}\nEmail: ${data.email}\nMessage: ${data.message}`,
     };
