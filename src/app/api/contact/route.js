@@ -9,8 +9,9 @@ export async function POST(req) {
     const resend = new Resend(process.env.RESEND_API_KEY);
 
     const emailResponse = await resend.emails.send({
-      from: "hello@new-way.ai", // ✅ Must match your Resend-verified domain
+      from: "hello@new-way.ai",
       to: "karina.savoie@new-way.ai",
+      reply_to: data.email,
       subject: "New Contact Form Submission",
       text: `Name: ${data.first_name} ${data.last_name}\nCompany: ${data.company}\nEmail: ${data.email}\nMessage: ${data.message}`,
     });
@@ -22,7 +23,7 @@ export async function POST(req) {
       { status: 200 }
     );
   } catch (error) {
-    console.error("❌ Error sending email:", error);
+    console.error("❌ Error sending email via Resend:", error);
     return NextResponse.json(
       { error: "Failed to send email", details: error.message },
       { status: 500 }
