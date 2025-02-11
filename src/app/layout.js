@@ -19,6 +19,23 @@ const inter = Inter({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={inter.variable}>
+      <head>
+        {/* Google Tag Manager */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-8NBEMHH5EW"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-8NBEMHH5EW');
+            `,
+          }}
+        />
+      </head>
       <body className="font-sans">
         {children}
         <Subscribe />
