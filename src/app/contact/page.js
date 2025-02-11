@@ -13,15 +13,17 @@ export default function ContactForm() {
 
   const [statusMessage, setStatusMessage] = useState("");
   const [statusType, setStatusType] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false); // ✅ Prevent double submission
 
-  // ✅ FIX: Correctly update form fields
+  // ✅ Update form fields correctly
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // ✅ FIX: Properly handle form submission
+  // ✅ Handle form submission properly
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true); // ✅ Disable button while submitting
 
     try {
       const response = await fetch("/api/contact", {
@@ -29,6 +31,8 @@ export default function ContactForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
+
+      console.log("🚀 API Response:", response); // ✅ Log API response
 
       if (response.ok) {
         setStatusMessage("Submitted! Thank you for your interest.");
@@ -40,16 +44,19 @@ export default function ContactForm() {
           email: "",
           message: "",
         });
-        console.log(formData);
       } else {
         const errorData = await response.json();
+        console.error("❌ API Error:", errorData); // ✅ Log error details
         setStatusMessage(`Error: ${errorData.error || "Submission failed"}`);
         setStatusType("error");
       }
     } catch (error) {
+      console.error("❌ Network error:", error);
       setStatusMessage("Network error. Please try again.");
       setStatusType("error");
     }
+
+    setIsSubmitting(false); // ✅ Re-enable button after submission
   };
 
   return (
@@ -114,7 +121,12 @@ export default function ContactForm() {
             <div className="flex flex-col md:flex-row md:items-center md:gap-6">
               <button
                 type="submit"
-                className="flex items-center justify-center w-12 h-12 bg-orange text-white rounded-full hover:bg-red-800 transition"
+                disabled={isSubmitting} // ✅ Prevent double clicks
+                className={`flex items-center justify-center w-12 h-12 rounded-full transition ${
+                  isSubmitting
+                    ? "bg-gray-400 cursor-not-allowed"
+                    : "bg-orange text-white hover:bg-red-800"
+                }`}
               >
                 →
               </button>

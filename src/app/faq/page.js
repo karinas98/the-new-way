@@ -1,3 +1,5 @@
+"use client";
+
 import FAQAccordion from "../components/faq";
 import Nav from "../components/nav";
 

@@ -1,6 +1,5 @@
-"use client";
-
 import { Resend } from "resend";
+import { NextResponse } from "next/server";
 
 export async function POST(req) {
   try {
@@ -10,7 +9,7 @@ export async function POST(req) {
     const resend = new Resend(process.env.RESEND_API_KEY);
 
     const emailResponse = await resend.emails.send({
-      from: "noreply@yourdomain.com", // Replace with your verified domain email
+      from: "hello@new-way.ai", // ✅ Must match your Resend-verified domain
       to: "karina.savoie@new-way.ai",
       subject: "New Contact Form Submission",
       text: `Name: ${data.first_name} ${data.last_name}\nCompany: ${data.company}\nEmail: ${data.email}\nMessage: ${data.message}`,
@@ -18,15 +17,15 @@ export async function POST(req) {
 
     console.log("✅ Email sent successfully:", emailResponse);
 
-    return new Response(
-      JSON.stringify({ message: "Form submitted successfully!" }),
-      { status: 200, headers: { "Content-Type": "application/json" } }
+    return NextResponse.json(
+      { message: "Form submitted successfully!" },
+      { status: 200 }
     );
   } catch (error) {
     console.error("❌ Error sending email:", error);
-    return new Response(
-      JSON.stringify({ error: "Failed to send email", details: error.message }),
-      { status: 500, headers: { "Content-Type": "application/json" } }
+    return NextResponse.json(
+      { error: "Failed to send email", details: error.message },
+      { status: 500 }
     );
   }
 }
