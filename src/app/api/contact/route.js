@@ -6,26 +6,25 @@ export async function POST(req) {
     const data = await req.json();
     console.log("✅ Form data received:", data);
 
-    // Create transporter for Gmail SMTP
     const transporter = nodemailer.createTransport({
-      service: "gmail",
+      host: "smtp.gmail.com",
+      port: 587,
+      secure: false,
       auth: {
-        user: process.env.EMAIL_USER, // ✅ Gmail email from .env.local
-        pass: process.env.EMAIL_PASS, // ✅ Gmail App Password from .env.local
+        user: process.env.EMAIL_USER, // Use a separate sender email if possible
+        pass: process.env.EMAIL_PASS,
       },
     });
 
-    // Email content
     const mailOptions = {
-      from: process.env.EMAIL_USER,
-      to: "karina.savoie@new-way.ai", // ✅ Your receiving email
-      replyTo: data.email, // ✅ User’s email
-      subject: "New Contact Form Submission",
-      text: `Name: ${data.first_name} ${data.last_name}\nCompany: ${data.company}\nEmail: ${data.email}\nMessage: ${data.message}`,
+      from: `"Website Contact" <no-reply@yourdomain.com>`, // Use a no-reply email
+      to: "karina.savoie@new-way.ai", // Your receiving email
+      subject: `New Contact Form Submission`,
+      text: `Message from ${first_name} ${last_name}: ${message}`,
     };
 
-    // Send email
     await transporter.sendMail(mailOptions);
+
     console.log("✅ Email sent successfully");
 
     return NextResponse.json(
