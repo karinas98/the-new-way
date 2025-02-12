@@ -8,17 +8,17 @@ const faqCategories = [
       {
         question: "How can AI actually benefit my business?",
         answer:
-          "AI can help businesses automate repetitive tasks, improve decision-making, and uncover insights from data that might otherwise be missed. It enhances efficiency, optimizes workflows, and drives business growth when applied strategically.",
+          "AI helps you work smarter, not harder. Whether it’s automating repetitive tasks, improving efficiency, or providing deeper insights, AI can have a powerful impact when used strategically and consistently. The key isn’t just adopting AI—it’s choosing the right tools that truly align with your business needs rather than following trends. From AI chatbots that enhance customer support to transcription tools that streamline documentation, inventory optimization that prevents stock issues, and personalized product recommendations that drive sales, AI offers endless possibilities to improve how you operate and grow. 🚀",
       },
       {
         question: "How do I know if AI is the right fit for my company?",
         answer:
-          "AI is a great fit if your business deals with large amounts of data, repetitive processes, or decision-making bottlenecks. We help businesses assess whether AI aligns with their goals and identify high-impact use cases.",
+          "AI isn’t just a nice-to-have anymore—it’s the world we live in now. If you want to grow, scale, and stay competitive, ignoring AI isn’t really an option. You don’t need to be ahead of your time, but you can’t afford to fall behind either. The key isn’t about jumping on the AI bandwagon just because everyone else is. It’s about figuring out where AI can actually help. Are you drowning in repetitive tasks? Struggling to keep up with customer demands? Wishing you had better insights to make smarter decisions? AI isn’t here to replace the human side of business—it’s here to free up your time, sharpen your strategy, and help you move faster. The real question isn’t if AI is the right fit, but how can it best support what you’re already building? ",
       },
       {
         question: "What’s the difference between automation and AI?",
         answer:
-          "Automation follows pre-set rules to perform tasks, while AI learns from data, adapts, and makes intelligent decisions. While automation streamlines tasks, AI makes them smarter.",
+          "Think of automation as following a set of rules—it takes repetitive tasks off your plate but doesn’t adapt or learn. It’s like setting up an email auto-responder or scheduling social media posts—it does what you tell it to do, the same way, every time. AI, on the other hand, goes beyond just following instructions—it learns, adapts, and makes decisions. Instead of just sending a pre-written email, AI can analyze customer behavior and tailor responses based on past interactions. Instead of just organizing data, AI can find patterns, predict trends, and suggest actions. The real magic happens when AI and automation work together—automation handles the routine, while AI adds intelligence, making processes smarter, faster, and more impactful. ",
       },
     ],
   },
@@ -29,7 +29,7 @@ const faqCategories = [
         question:
           "What makes The New Way different from other AI consultancies?",
         answer:
-          "We focus on practical, tailored AI guidance—not hype. Instead of pushing generic solutions, we evaluate the best AI tools for your needs and provide clear, strategic implementation support.",
+          "Most AI consultancies either push their own software or leave you drowning in complicated language and a tool that you'll loose interest in using overtime without real guidance. We do things differently, we utilize the human-centered approach with the technology of today. At The New Way, we don’t just throw AI at a problem and hope it sticks. We help you understand what’s possible, what’s useful, and what actually moves the needle for your business. Instead of overwhelming you with complicated solutions, we simplify AI, making it accessible, practical, and provide solutions that will fit to your specific needs & budget. We evaluate what’s out there, what fits your business, and what will deliver real results. At the end of the day, AI isn’t about hype—it’s about impact. And our job is to make sure AI works for you, not the other way around. ",
       },
       {
         question:
@@ -106,11 +106,13 @@ export default function FAQAccordion() {
                 <div
                   className={`overflow-hidden transition-all duration-300 ${
                     openIndex === catIndex + "-" + index
-                      ? "max-h-40 opacity-100"
+                      ? "max-h-[1000px] opacity-100"
                       : "max-h-0 opacity-0"
                   }`}
                 >
-                  <p className="text-gray-600 pb-4">{faq.answer}</p>
+                  <p className="text-black pb-6 leading-relaxed">
+                    {faq.answer}
+                  </p>
                 </div>
               </div>
             ))}
