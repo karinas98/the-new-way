@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import kalroLogo from "@/app/assets/kalro-white-logo.png";
+import kalroLogo from "@/app/assets/kalro-logo.png";
 import entLogo from "@/app/assets/london-ent-clinic.png";
 
 export default function ClientReviews() {
@@ -25,18 +25,18 @@ export default function ClientReviews() {
         {reviews.map((review, index) => (
           <div
             key={index}
-            className="bg-orange p-10 md:p-16 rounded-[30px] md:rounded-[100px] shadow-lg flex flex-col items-center text-center w-full lg:w-1/2 h-full md:h-[520px] transition-all duration-500 ease-in-out hover:translate-y-0"
+            className="bg-lightblue p-12 rounded-[30px] border-[1px] border-orange shadow-xl flex flex-col items-center text-center w-full lg:w-1/2 h-full md:h-[500px] transition-all duration-300 ease-in-out hover:-translate-y-2"
           >
-            <p className="text-md md:text-lg font-light text-lightblue w-[90%] md:w-[85%] mx-auto flex-1 flex items-center justify-center">
+            <p className="text-md md:text-lg font-light text-orange w-full mx-auto flex-1 flex items-center justify-center">
               "{review.quote}"
             </p>
-            <div className="mt-6">
+            <div>
               <Link href={review.clientLink}>
                 <Image
                   src={review.logo}
                   alt="Client Logo"
-                  width={90}
-                  height={50}
+                  width={180}
+                  height={60}
                 />
               </Link>
             </div>
