@@ -3,6 +3,7 @@ import GetInTouch from "../components/get-in-touch";
 import Nav from "../components/nav";
 import Link from "next/link";
 import CarouselWithBanner from "../components/scrolling-banner";
+import CalendlyButton from "../components/calendly-link";
 
 export default function WhatWeDo() {
   return (
@@ -21,6 +22,7 @@ export default function WhatWeDo() {
               strategies to not just keep up, but stand out in a fast-moving
               world.
             </p>
+            <CalendlyButton />
           </div>
         </section>
       </div>
