@@ -66,7 +66,7 @@ export default function Home() {
           <h2 className="text-secondaryheadline font-extrabold text-orange">
             WHY WE DO THIS
           </h2>
-          <p className="pt-5">
+          <p className="pt-5 text-black">
             AI has the potential to transform industries, but knowing where to
             begin and how to integrate it into your organisation can be a
             challenge. Every business, regardless of technical expertise, should
@@ -101,7 +101,7 @@ export default function Home() {
                 Tailored AI Solutions
               </h3>
 
-              <p>
+              <p className="text-black">
                 We design strategies that align with your unique goals,
                 industry, and operational needs, ensuring AI enhances your
                 business without disrupting it.
@@ -112,7 +112,7 @@ export default function Home() {
               <h3 className="text-orange mb-2 text-[18px] font-semibold">
                 Human-Centered Approach
               </h3>
-              <p>
+              <p className="text-black">
                 Our solutions prioritise people, balancing technological
                 advancements with ethical considerations and change management
                 to foster trust and adoption.
@@ -123,7 +123,7 @@ export default function Home() {
               <h3 className="text-orange mb-2 text-[18px] font-semibold">
                 Vendor-Agnostic Guidance
               </h3>
-              <p>
+              <p className="text-black">
                 We recommend the best tools and platforms for your needs, done
                 by thourough research and eval, to deliver maximum value and
                 ROI.
@@ -136,7 +136,7 @@ export default function Home() {
               <h3 className="text-orange mb-2 text-[18px] font-semibold">
                 Simplifying Complexity
               </h3>
-              <p>
+              <p className="text-black">
                 We simplify AI with clear, actionable insights and step-by-step
                 support, making advanced technology accessible and
                 understandable.
@@ -147,7 +147,7 @@ export default function Home() {
               <h3 className="text-orange mb-2 text-[18px] font-semibold">
                 Ethical and Regulatory Focus
               </h3>
-              <p>
+              <p className="text-black">
                 We ensure responsible AI integration by addressing governance,
                 compliance, and ethical standards upfront. Adhering to GDPR,
                 CCPA, HIPPA and more, we help businesses adopt AI confidently

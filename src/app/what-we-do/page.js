@@ -15,7 +15,7 @@ export default function WhatWeDo() {
             <h1 className="text-[45px] md:text-title font-light text-orange xl:text-[60px]">
               WHAT WE DO
             </h1>
-            <p className="pt-12 md:w-[75%] xl:w-[45%]">
+            <p className="pt-12 md:w-[75%] xl:w-[45%] text-black">
               The New Way is your partner for navigating the AI journey—making
               your operations smoother, your processes smarter, and your growth
               unstoppable. We’re all about giving your business the tools and
@@ -40,10 +40,10 @@ export default function WhatWeDo() {
           </h2>
           <div>
             <div className="flex mt-10 flex-col md:flex-row md:gap-20 lg:gap-40  md:justify-between">
-              <h3 className="text-[45px] lg:text-[60px] mb-10 font-extrabold leading-[55px]">
+              <h3 className="text-[45px] text-black lg:text-[60px] mb-10 font-extrabold leading-[55px]">
                 THE <br /> IGNITION
               </h3>
-              <p className="xl:w-[40%] 2xl:w-[30%]">
+              <p className="xl:w-[40%] text-black 2xl:w-[30%]">
                 The "AI Ignition" package is designed to help you understand
                 where your business stands in terms of AI readiness. We analyze
                 the current state of your technology, data, and processes to
@@ -58,7 +58,7 @@ export default function WhatWeDo() {
               <h4 className="text-lg font-extrabold text-orange">
                 WHAT TO EXPECT
               </h4>
-              <ul className="mt-5">
+              <ul className="mt-5 text-black">
                 <li>
                   <span className="font-bold">In-Depth Assessments</span>
                   <br /> We evaluate your organisation’s existing
@@ -83,7 +83,7 @@ export default function WhatWeDo() {
               <h4 className="text-lg font-extrabold text-orange">
                 WHAT YOU’LL GET
               </h4>
-              <ul className="mt-5">
+              <ul className="mt-5 text-black">
                 <li>
                   <span className="font-bold">Comprehensive Reports</span>
                   <br /> Detailed insights into your current capabilities and
@@ -117,10 +117,10 @@ export default function WhatWeDo() {
               <h2 className="text-secondaryheadline font-extrabold text-orange">
                 OUR PACKAGES
               </h2>
-              <h3 className="text-[45px] lg:text-[60px] mb-10 mt-20 font-extrabold leading-[55px]">
+              <h3 className="text-[45px] text-black lg:text-[60px] mb-10 mt-20 font-extrabold leading-[55px]">
                 THE <br /> NAVIGATOR
               </h3>
-              <p className="xl:w-[40%] 2xl:w-[30%]">
+              <p className="xl:w-[40%] text-black 2xl:w-[30%]">
                 The "AI Navigator" package is designed for businesses ready to
                 take the next step in their AI journey. Beyond understanding
                 readiness, this package provides vendor-agnostic guidance and
@@ -134,7 +134,7 @@ export default function WhatWeDo() {
               <h4 className="text-lg font-extrabold text-orange">
                 WHAT TO EXPECT
               </h4>
-              <ul className="mt-5">
+              <ul className="mt-5 text-black">
                 <li>
                   Everything included in the
                   <span className="font-bold text-orange">
@@ -162,7 +162,7 @@ export default function WhatWeDo() {
               <h4 className="text-lg font-extrabold text-orange">
                 WHAT YOU’LL GET
               </h4>
-              <ul className="mt-5">
+              <ul className="mt-5 text-black">
                 <li>
                   <span className="font-bold">Clear Insights</span>
                   <br /> A clear understanding of your AI readiness and
@@ -201,10 +201,10 @@ export default function WhatWeDo() {
               <h2 className="text-secondaryheadline font-extrabold text-orange">
                 OUR PACKAGES
               </h2>
-              <h3 className="text-[45px] lg:text-[60px] mb-10 font-extrabold mt-20 leading-[55px]">
+              <h3 className="text-[45px] text-black lg:text-[60px] mb-10 font-extrabold mt-20 leading-[55px]">
                 THE <br /> INTEGRATOR
               </h3>
-              <p className="xl:w-[40%] 2xl:w-[30%]">
+              <p className="xl:w-[40%] text-black 2xl:w-[30%]">
                 The "AI Integrator" package is designed for businesses ready to
                 fully embrace AI integration at an enterprise level. Building on
                 the Navigator Package, this comprehensive solution adds
@@ -218,7 +218,7 @@ export default function WhatWeDo() {
               <h4 className="text-lg font-extrabold text-orange">
                 WHAT TO EXPECT
               </h4>
-              <ul className="mt-5">
+              <ul className="mt-5 text-black">
                 <li>
                   Everything included in the
                   <span className="font-bold text-orange">
@@ -246,7 +246,7 @@ export default function WhatWeDo() {
               <h4 className="text-lg font-extrabold text-orange">
                 WHAT YOU’LL GET
               </h4>
-              <ul className="mt-5">
+              <ul className="mt-5 text-black">
                 <li>
                   <span className="font-bold">
                     Comprehensive Integration Support
@@ -286,10 +286,10 @@ export default function WhatWeDo() {
               <h2 className="text-secondaryheadline font-extrabold text-orange">
                 OUR PACKAGES
               </h2>
-              <h3 className="text-[45px] lg:text-[60px] mb-10 font-extrabold mt-20 leading-[55px]">
+              <h3 className="text-[45px] text-black lg:text-[60px] mb-10 font-extrabold mt-20 leading-[55px]">
                 THE <br /> AGENT
               </h3>
-              <p className="xl:w-[40%] 2xl:w-[30%]">
+              <p className="xl:w-[40%] text-black 2xl:w-[30%]">
                 The "AI Agent" package is a premium, end-to-end solution for
                 businesses with distinct AI challenges or bold visions. It’s
                 your entry point into the field of AI agents, exploring their
@@ -305,7 +305,7 @@ export default function WhatWeDo() {
               <h4 className="text-lg font-extrabold text-orange">
                 WHAT TO EXPECT
               </h4>
-              <ul className="mt-5">
+              <ul className="mt-5 text-black">
                 <li>
                   <span className="font-bold">
                     Enter the Field of AI Agents
@@ -337,7 +337,7 @@ export default function WhatWeDo() {
               <h4 className="text-lg font-extrabold text-orange">
                 WHAT YOU’LL GET
               </h4>
-              <ul className="mt-5">
+              <ul className="mt-5 text-black">
                 <li>
                   <span className="font-bold">Bespoke AI Solutions </span>
                   <br />

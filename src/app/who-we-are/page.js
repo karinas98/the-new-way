@@ -21,7 +21,7 @@ export default function WhoWeAre() {
             <h1 className=" text-[45px]  md:text-title font-light text-orange xl:text-[60px] ">
               WHO WE ARE
             </h1>
-            <p className="pt-10 pb-32 md:w-[75%] xl:w-[35%]">
+            <p className="pt-10 pb-32 md:w-[75%] xl:w-[35%] text-black">
               We’re a committed team focused on helping businesses make sense of
               AI in a rapidly evolving technological landscape. We understand
               that navigating the possibilities and challenges of AI requires
@@ -52,7 +52,7 @@ export default function WhoWeAre() {
                 Transparency is Key
               </h3>
 
-              <p className="lg:w-[80%] 2xl:text-[20px]">
+              <p className="lg:w-[80%] 2xl:text-[20px] text-black">
                 We believe AI doesn’t have to be complicated. We break it down,
                 keep it straightforward, and focus on what actually works for
                 you.
@@ -67,7 +67,7 @@ export default function WhoWeAre() {
               <h3 className="text-orange text-[20px] font-semibold pb-5 2xl:text-[25px]">
                 Ethics & Privacy Always
               </h3>
-              <p className="  lg:w-[80%] 2xl:text-[20px]">
+              <p className="  lg:w-[80%] 2xl:text-[20px] text-black">
                 AI should help, not harm. We’re committed to solutions that are
                 responsible, fair, and built with integrity at every step.
               </p>
@@ -81,7 +81,7 @@ export default function WhoWeAre() {
               <h3 className="text-orange text-[20px] font-semibold pb-5 2xl:text-[25px]">
                 Results Matter
               </h3>
-              <p className=" lg:w-[80%] 2xl:text-[20px]">
+              <p className=" lg:w-[80%] 2xl:text-[20px] text-black">
                 It’s not about using tech for the sake of it—it’s about
                 meaningful improvements that keep your business competitive and
                 ready for what’s next.
