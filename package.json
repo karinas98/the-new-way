@@ -11,7 +11,6 @@
   "dependencies": {
     "@netlify/next": "^1.4.9",
     "@next/font": "^14.2.15",
-    "nodemailer": "^6.10.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
