@@ -11,15 +11,15 @@ export default function ContactForm() {
     message: "",
   });
 
-  const [statusMessage, setStatusMessage] = useState("");
-  const [statusType, setStatusType] = useState("");
+  // const [statusMessage, setStatusMessage] = useState("");
+  // const [statusType, setStatusType] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [hasMounted, setHasMounted] = useState(false); // ✅ Fix hydration error
 
-  // ✅ Ensure status messages only appear after hydration
-  useEffect(() => {
-    setHasMounted(true);
-  }, []);
+  // // ✅ Ensure status messages only appear after hydration
+  // useEffect(() => {
+  //   setHasMounted(true);
+  // }, []);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -29,39 +29,39 @@ export default function ContactForm() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-
-      console.log("🚀 API Response:", response);
-
-      if (response.ok) {
-        setStatusMessage("Submitted! Thank you for your interest.");
-        setStatusType("success");
-        setFormData({
-          first_name: "",
-          last_name: "",
-          company: "",
-          email: "",
-          message: "",
-        });
-      } else {
-        const errorData = await response.json();
-        console.error("❌ API Error:", errorData);
-        setStatusMessage(`Error: ${errorData.error || "Submission failed"}`);
-        setStatusType("error");
-      }
-    } catch (error) {
-      console.error("❌ Network error:", error);
-      setStatusMessage("Network error. Please try again.");
-      setStatusType("error");
-    }
-
-    setIsSubmitting(false);
+    //   try {
+    //     const response = await fetch("/api/contact", {
+    //       method: "POST",
+    //       headers: { "Content-Type": "application/json" },
+    //       body: JSON.stringify(formData),
   };
+
+  //     console.log("🚀 API Response:", response);
+
+  //     if (response.ok) {
+  //       setStatusMessage("Submitted! Thank you for your interest.");
+  //       setStatusType("success");
+  //       setFormData({
+  //         first_name: "",
+  //         last_name: "",
+  //         company: "",
+  //         email: "",
+  //         message: "",
+  //       });
+  //     } else {
+  //       const errorData = await response.json();
+  //       console.error("❌ API Error:", errorData);
+  //       setStatusMessage(`Error: ${errorData.error || "Submission failed"}`);
+  //       setStatusType("error");
+  //     }
+  //   } catch (error) {
+  //     console.error("❌ Network error:", error);
+  //     setStatusMessage("Network error. Please try again.");
+  //     setStatusType("error");
+  //   }
+
+  //   setIsSubmitting(false);
+  // };
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-lightblue">
@@ -70,7 +70,6 @@ export default function ContactForm() {
         <h1 className="text-3xl md:w-[70%] lg:text-4xl xl:w-[40%] 2xl:w-[30%] font-normal text-orange mb-6">
           LET’S GET THE CONVERSATION STARTED
         </h1>
-
         <div className="flex mt-10 lg:w-[90%] xl:w-[40%] 2xl:w-[30%] flex-col">
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
