@@ -35,9 +35,9 @@ export default function Footer() {
               alt="Twitter profile"
             />
           </Link>
-          <Link href="mailto:karina.savoie@new-way.ai">
+          <a href="mailto:karina.savoie@new-way.ai">
             <Image src={emailIcon} className="w-[40px] h-[40px]" alt="Email" />
-          </Link>
+          </a>
         </div>
       </div>
 
