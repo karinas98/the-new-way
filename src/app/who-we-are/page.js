@@ -117,10 +117,10 @@ export default function WhoWeAre() {
               />
             </Link>
           </div>
-          <h3 className="font-light mb-10 text-[18px] lg:text-[20px]">
+          <h3 className="font-light text-black mb-10 text-[18px] lg:text-[20px]">
             Founder & CEO
           </h3>
-          <p className="md:text-[14px] lg:text-[18px] lg:w-[70%] 2xl:w-[50%]">
+          <p className="md:text-[14px] text-black lg:text-[18px] lg:w-[70%] 2xl:w-[50%]">
             She is a software engineer at the forefront of AI and emerging
             technologies, dedicated to bridging the gap between innovation and
             real-world application. With a strong technical background and a

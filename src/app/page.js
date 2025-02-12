@@ -168,7 +168,7 @@ export default function Home() {
           <h2 className="pl-[40px] md:pl-[90px] text-secondaryheadline font-extrabold text-orange">
             OUR PACKAGES
           </h2>
-          <p className="md:w-[60%] w-[85%] pl-[40px] md:pl-0">
+          <p className="md:w-[60%] w-[85%] pl-[40px] md:pl-0 text-black">
             We offer tailored packages designed to guide businesses through
             every stage of AI adoption—whether you're just starting or ready to
             scale. From quick-win assessments to comprehensive implementation
