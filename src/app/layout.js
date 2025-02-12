@@ -8,6 +8,11 @@ export const metadata = {
   title: "The New Way Consultancy",
   description:
     "We’re a forward-thinking AI consultancy dedicated to helping businesses navigate the complexities of AI adoption with clarity and confidence. ",
+  icons: {
+    icon: "/favicon-new-way.ico",
+    shortcut: "/favicon-new-way.ico",
+    apple: "/favicon-new-way.png",
+  },
 };
 
 const inter = Inter({
@@ -35,6 +40,8 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
+        <link rel="icon" href="/favicon-new-way.ico" sizes="any" />
+        <link rel="apple-touch-icon" href="/favicon-new-way.png" />
       </head>
       <body className="font-sans">
         <noscript>
