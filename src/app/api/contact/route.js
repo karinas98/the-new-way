@@ -1,26 +1,42 @@
-const nodemailer = require("nodemailer");
+import nodemailer from "nodemailer";
+import { NextResponse } from "next/server";
 
-const transporter = nodemailer.createTransport({
-  host: "smtp.sendgrid.net",
-  port: 587,
-  secure: false, // Use true for port 465
-  auth: {
-    user: "apikey", // This is required, literally "apikey"
-    pass: process.env.SENDGRID_API_KEY, // Store your key in environment variables
-  },
-});
+export async function POST(req) {
+  try {
+    const data = await req.json();
+    console.log("✅ Form data received:", data);
 
-const mailOptions = {
-  from: "your-email@yourdomain.com",
-  to: "recipient@example.com",
-  subject: "Test Email from Nodemailer via SendGrid",
-  text: "Hello! This is a test email sent using Nodemailer with SendGrid SMTP.",
-};
+    // Create transporter for Gmail SMTP
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: process.env.EMAIL_USER, // ✅ Gmail email from .env.local
+        pass: process.env.EMAIL_PASS, // ✅ Gmail App Password from .env.local
+      },
+    });
 
-transporter.sendMail(mailOptions, (error, info) => {
-  if (error) {
-    console.log("Error sending email:", error);
-  } else {
-    console.log("Email sent successfully:", info.response);
+    // Email content
+    const mailOptions = {
+      from: process.env.EMAIL_USER,
+      to: "karina.savoie@new-way.ai", // ✅ Your receiving email
+      replyTo: data.email, // ✅ User’s email
+      subject: "New Contact Form Submission",
+      text: `Name: ${data.first_name} ${data.last_name}\nCompany: ${data.company}\nEmail: ${data.email}\nMessage: ${data.message}`,
+    };
+
+    // Send email
+    await transporter.sendMail(mailOptions);
+    console.log("✅ Email sent successfully");
+
+    return NextResponse.json(
+      { message: "Form submitted successfully!" },
+      { status: 200 }
+    );
+  } catch (error) {
+    console.error("❌ Error sending email:", error);
+    return NextResponse.json(
+      { error: "Failed to send email" },
+      { status: 500 }
+    );
   }
-});
+}

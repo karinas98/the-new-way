@@ -16,7 +16,7 @@ export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [hasMounted, setHasMounted] = useState(false); // ✅ Fix hydration error
 
-  // // ✅ Ensure status messages only appear after hydration
+  // ✅ Ensure status messages only appear after hydration
   useEffect(() => {
     setHasMounted(true);
   }, []);
@@ -70,6 +70,7 @@ export default function ContactForm() {
         <h1 className="text-3xl md:w-[70%] lg:text-4xl xl:w-[40%] 2xl:w-[30%] font-normal text-orange mb-6">
           LET’S GET THE CONVERSATION STARTED
         </h1>
+
         <div className="flex mt-10 lg:w-[90%] xl:w-[40%] 2xl:w-[30%] flex-col">
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
