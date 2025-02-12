@@ -28,11 +28,11 @@ export default function Footer() {
               alt="linkedin profile"
             />
           </Link>
-          <Link href="">
+          <Link href="https://x.com/TheAIWhisperer_">
             <Image
               src={XIcon}
               className="w-[40px] h-[40px]"
-              alt="Instagram profile"
+              alt="Twitter profile"
             />
           </Link>
           <Link href="mailto:karina.savoie@new-way.ai">
