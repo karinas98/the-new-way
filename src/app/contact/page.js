@@ -11,15 +11,15 @@ export default function ContactForm() {
     message: "",
   });
 
-  // const [statusMessage, setStatusMessage] = useState("");
-  // const [statusType, setStatusType] = useState("");
+  const [statusMessage, setStatusMessage] = useState("");
+  const [statusType, setStatusType] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [hasMounted, setHasMounted] = useState(false); // ✅ Fix hydration error
 
   // // ✅ Ensure status messages only appear after hydration
-  // useEffect(() => {
-  //   setHasMounted(true);
-  // }, []);
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -29,39 +29,39 @@ export default function ContactForm() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    //   try {
-    //     const response = await fetch("/api/contact", {
-    //       method: "POST",
-    //       headers: { "Content-Type": "application/json" },
-    //       body: JSON.stringify(formData),
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      console.log("🚀 API Response:", response);
+
+      if (response.ok) {
+        setStatusMessage("Submitted! Thank you for your interest.");
+        setStatusType("success");
+        setFormData({
+          first_name: "",
+          last_name: "",
+          company: "",
+          email: "",
+          message: "",
+        });
+      } else {
+        const errorData = await response.json();
+        console.error("❌ API Error:", errorData);
+        setStatusMessage(`Error: ${errorData.error || "Submission failed"}`);
+        setStatusType("error");
+      }
+    } catch (error) {
+      console.error("❌ Network error:", error);
+      setStatusMessage("Network error. Please try again.");
+      setStatusType("error");
+    }
+
+    setIsSubmitting(false);
   };
-
-  //     console.log("🚀 API Response:", response);
-
-  //     if (response.ok) {
-  //       setStatusMessage("Submitted! Thank you for your interest.");
-  //       setStatusType("success");
-  //       setFormData({
-  //         first_name: "",
-  //         last_name: "",
-  //         company: "",
-  //         email: "",
-  //         message: "",
-  //       });
-  //     } else {
-  //       const errorData = await response.json();
-  //       console.error("❌ API Error:", errorData);
-  //       setStatusMessage(`Error: ${errorData.error || "Submission failed"}`);
-  //       setStatusType("error");
-  //     }
-  //   } catch (error) {
-  //     console.error("❌ Network error:", error);
-  //     setStatusMessage("Network error. Please try again.");
-  //     setStatusType("error");
-  //   }
-
-  //   setIsSubmitting(false);
-  // };
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-lightblue">
