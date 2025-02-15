@@ -1,9 +1,9 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $secretKey = "6LfJBdgqAAAAAMLwQNpHNtGKPPx_BosoyxNbufS_"; // Replace with your reCAPTCHA secret key
+    $secretKey = "6Le0ItgqAAAAALkLk1Pm-zg0-2gf2eOHj9Qo36Uj";  // Replace with your reCAPTCHA Secret Key
     $captchaResponse = $_POST["g-recaptcha-response"];
 
-    // Verify the reCAPTCHA response with Google
+    // Verify with Google API
     $url = "https://www.google.com/recaptcha/api/siteverify";
     $data = [
         'secret' => $secretKey,
@@ -22,11 +22,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $result = file_get_contents($url, false, $context);
     $responseKeys = json_decode($result, true);
 
-    if ($responseKeys["success"]) {
+    if ($responseKeys["success"] && $responseKeys["score"] >= 0.5) {
         echo "reCAPTCHA verification successful!";
-        // Process the form data here (e.g., save to database, send email, etc.)
+        // Proceed with form processing (e.g., store data, send email, etc.)
     } else {
         echo "reCAPTCHA verification failed.";
     }
 }
 ?>
+

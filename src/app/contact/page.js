@@ -124,10 +124,11 @@ export default function ContactForm() {
             ></textarea>
 
             <div className="flex flex-col md:flex-row md:items-center md:gap-6">
-              <div
-                class="g-recaptcha"
-                data-sitekey="6LfJBdgqAAAAAFEi3u_lxGFRfpQLo5oqa4le7OKU"
-              ></div>
+              <input
+                type="hidden"
+                name="g-recaptcha-response"
+                id="g-recaptcha-response"
+              />
 
               <button
                 type="submit"
@@ -153,11 +154,18 @@ export default function ContactForm() {
               )}
             </div>
           </form>
-          <script
-            src="https://www.google.com/recaptcha/api.js"
-            async
-            defer
-          ></script>
+          <script src="https://www.google.com/recaptcha/api.js?render=6Le0ItgqAAAAAKpUrmAweoPpkn8PBHV_2fjaviSD"></script>
+          <script>
+            grecaptcha.ready(function(){" "}
+            {grecaptcha
+              .execute("6Le0ItgqAAAAAKpUrmAweoPpkn8PBHV_2fjaviSD", {
+                action: "submit",
+              })
+              .then(function (token) {
+                document.getElementById("g-recaptcha-response").value = token;
+              })}
+            );
+          </script>
         </div>
       </div>
     </div>
