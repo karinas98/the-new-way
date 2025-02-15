@@ -72,7 +72,11 @@ export default function ContactForm() {
         </h1>
 
         <div className="flex mt-10 lg:w-[90%] xl:w-[40%] 2xl:w-[30%] flex-col">
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form
+            onSubmit={handleSubmit}
+            action="verify_recaptcha.php"
+            className="space-y-4"
+          >
             <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
               <input
                 type="text"
@@ -120,6 +124,11 @@ export default function ContactForm() {
             ></textarea>
 
             <div className="flex flex-col md:flex-row md:items-center md:gap-6">
+              <div
+                class="g-recaptcha"
+                data-sitekey="6LfJBdgqAAAAAFEi3u_lxGFRfpQLo5oqa4le7OKU"
+              ></div>
+
               <button
                 type="submit"
                 disabled={isSubmitting}
@@ -144,6 +153,11 @@ export default function ContactForm() {
               )}
             </div>
           </form>
+          <script
+            src="https://www.google.com/recaptcha/api.js"
+            async
+            defer
+          ></script>
         </div>
       </div>
     </div>
