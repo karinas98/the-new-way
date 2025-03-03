@@ -1,33 +1,37 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $secretKey = "6Le0ItgqAAAAALkLk1Pm-zg0-2gf2eOHj9Qo36Uj";  // Replace with your reCAPTCHA Secret Key
-    $captchaResponse = $_POST["g-recaptcha-response"];
+    $secretKey = "6Le0ItgqAAAAAKpUrmAweoPpkn8PBHV_2fjaviSD";  // Replace with your reCAPTCHA Secret Key
+    $json = file_get_contents("php://input");
+    $data = json_decode($json, true);
 
-    // Verify with Google API
+    if (!isset($data["g-recaptcha-response"])) {
+        echo "reCAPTCHA token is missing.";
+        exit;
+    }
+
+    $captchaResponse = $data["g-recaptcha-response"];
+
     $url = "https://www.google.com/recaptcha/api/siteverify";
-    $data = [
-        'secret' => $secretKey,
-        'response' => $captchaResponse
+    $postData = [
+        "secret" => $secretKey,
+        "response" => $captchaResponse
     ];
 
-    $options = [
-        'http' => [
-            'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
-            'method'  => 'POST',
-            'content' => http_build_query($data)
-        ]
-    ];
+    $ch = curl_init($url);
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($postData));
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    $response = curl_exec($ch);
+    curl_close($ch);
 
-    $context  = stream_context_create($options);
-    $result = file_get_contents($url, false, $context);
-    $responseKeys = json_decode($result, true);
+    $responseKeys = json_decode($response, true);
 
     if ($responseKeys["success"] && $responseKeys["score"] >= 0.5) {
         echo "reCAPTCHA verification successful!";
-        // Proceed with form processing (e.g., store data, send email, etc.)
     } else {
         echo "reCAPTCHA verification failed.";
     }
 }
 ?>
+
 

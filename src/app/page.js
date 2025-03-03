@@ -81,7 +81,7 @@ export default function Home() {
             organisations keep pace in a rapidly evolving technological world.
           </p>
         </div>
-        <Link href="/who-we-are">
+        <Link href="/contact">
           <button className=" mt-10 bg-orange text-[14px] text-lightblue font-bold py-4 px-10 hover:bg-white hover:border-2 hover:border-orange hover:text-orange rounded-full shadow-sm">
             GET IN TOUCH
           </button>
