@@ -1,11 +1,9 @@
-import Image from "next/image";
-import Link from "next/link";
-import OrangeArrow from "@/app/assets/orange-arrow.png";
+import ContactBanner from "./contact-form";
 
 export default function GetInTouch() {
   return (
-    <section className="md:h-[420px] lg:pt-32 mb-32 pt-[100px] ">
-      <div className="lg:w-[48%] XL:w-[42%] md:w-[50%] bg-lightblue flex flex-col mx-[20px] md:ml-[90px] p-10 rounded-lg  ">
+    <section className="lg:px-32 mb-32 w-full pt-[100px]  ">
+      <div className=" bg-lightblue items-center flex justify-evenly  p-10 rounded-lg  ">
         <div>
           <h2 className="text-orange text-secondaryheadline leading-8 mb-10 font-extrabold ">
             DISCOVER WHAT'S POSSIBLE
@@ -19,13 +17,7 @@ export default function GetInTouch() {
           </p>
         </div>
         <div className="flex justify-end pt-10">
-          <Link href="/contact">
-            <Image
-              alt="Go to contact page"
-              src={OrangeArrow}
-              className="w-[40px]"
-            />
-          </Link>
+          <ContactBanner />
         </div>
       </div>
     </section>
