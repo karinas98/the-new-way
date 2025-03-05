@@ -42,7 +42,7 @@ export default function Footer() {
       </div>
 
       <div>
-        <div className=" flex gap-[50px] text-white font-bold text-[14px] pb-5 ">
+        <div className=" flex gap-[50px] text-white font-bold md:text-[14px] text-[11px] pb-5 ">
           <Link className="hover:text-grey" href="/who-we-are">
             WHO WE ARE
           </Link>
