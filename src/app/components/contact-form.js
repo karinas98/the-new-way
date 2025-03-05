@@ -1,9 +1,11 @@
 "use client";
+import Nav from "../components/nav";
 import { useState, useEffect } from "react";
 
 export default function ContactBanner() {
   const [formData, setFormData] = useState({
-    full_name: "",
+    first_name: "",
+    last_name: "",
     email: "",
     message: "",
   });
@@ -61,7 +63,8 @@ export default function ContactBanner() {
         setStatusMessage("Submitted! Thank you for your interest.");
         setStatusType("success");
         setFormData({
-          full_name: "",
+          first_name: "",
+          last_name: "",
           email: "",
           message: "",
         });
@@ -79,64 +82,76 @@ export default function ContactBanner() {
   };
 
   return (
-    <div>
-      <div className="flex mt-10  flex-col">
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
-            <input
-              type="text"
-              name="full_name"
-              value={formData.full_name}
-              onChange={handleChange}
-              placeholder="FULL NAME*"
-              required
-              className="w-full md:w-1/2 p-3 rounded-lg placeholder:text-orange text-[14px] text-orange focus:outline-none focus:ring-2 focus:ring-orange"
-            />
-          </div>
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            placeholder="EMAIL*"
-            required
-            className="w-full p-3 rounded-lg placeholder:text-orange text-[14px] text-orange focus:outline-none focus:ring-2 focus:ring-orange"
-          />
-          <textarea
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            placeholder="HOW CAN WE HELP?*"
-            required
-            className="w-full p-3 rounded-lg text-[14px] text-orange placeholder:text-orange focus:outline-none focus:ring-2 focus:ring-orange h-32"
-          ></textarea>
+    <div className="flex items-center flex-col gap-20 lg:flex-row justify-center bg-lightblue">
+      <div>
+        <div className="flex mt-10 flex-col">
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
+              <input
+                type="text"
+                name="first_name"
+                value={formData.first_name}
+                onChange={handleChange}
+                placeholder="FIRST NAME*"
+                required
+                className="w-full md:w-1/2 p-3 rounded-lg placeholder:text-orange text-[14px] text-orange focus:outline-none focus:ring-2 focus:ring-orange"
+              />
+              <input
+                type="text"
+                name="last_name"
+                value={formData.last_name}
+                onChange={handleChange}
+                placeholder="LAST NAME*"
+                required
+                className="w-full md:w-1/2 p-3 rounded-lg placeholder:text-orange text-[14px] text-orange focus:outline-none focus:ring-2 focus:ring-orange"
+              />
+            </div>
 
-          <input
-            type="hidden"
-            name="g-recaptcha-response"
-            id="g-recaptcha-response"
-          />
-          <button
-            type="submit"
-            disabled={isSubmitting}
-            className={`w-12 h-12 rounded-full transition ${
-              isSubmitting
-                ? "bg-gray-400 cursor-not-allowed"
-                : "bg-orange text-white hover:bg-red-800"
-            }`}
-          >
-            →
-          </button>
-          {statusMessage && (
-            <p
-              className={
-                statusType === "success" ? "text-gray-700" : "text-orange"
-              }
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="EMAIL*"
+              required
+              className="w-full p-3 rounded-lg placeholder:text-orange text-[14px] text-orange focus:outline-none focus:ring-2 focus:ring-orange"
+            />
+            <textarea
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              placeholder="HOW CAN WE HELP?*"
+              required
+              className="w-full p-3 rounded-lg text-[14px] text-orange placeholder:text-orange focus:outline-none focus:ring-2 focus:ring-orange h-32"
+            ></textarea>
+
+            <input
+              type="hidden"
+              name="g-recaptcha-response"
+              id="g-recaptcha-response"
+            />
+            <button
+              type="submit"
+              disabled={isSubmitting}
+              className={`w-12 h-12 rounded-full transition ${
+                isSubmitting
+                  ? "bg-gray-400 cursor-not-allowed"
+                  : "bg-orange text-white hover:bg-red-800"
+              }`}
             >
-              {statusMessage}
-            </p>
-          )}
-        </form>
+              →
+            </button>
+            {statusMessage && (
+              <p
+                className={
+                  statusType === "success" ? "text-gray-700" : "text-orange"
+                }
+              >
+                {statusMessage}
+              </p>
+            )}
+          </form>
+        </div>
       </div>
     </div>
   );
