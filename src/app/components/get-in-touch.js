@@ -3,7 +3,7 @@ import ContactBanner from "./contact-form";
 export default function GetInTouch() {
   return (
     <section className="lg:px-32 mb-32 w-full pt-[100px]  ">
-      <div className=" bg-lightblue items-center flex justify-evenly  p-10 rounded-lg  ">
+      <div className=" bg-lightblue items-center flex justify-evenly lg:flex-row flex-col  p-10 rounded-lg  ">
         <div>
           <h2 className="text-orange text-secondaryheadline leading-8 mb-10 font-extrabold ">
             DISCOVER WHAT'S POSSIBLE
