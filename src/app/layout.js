@@ -53,7 +53,7 @@ export default function RootLayout({ children }) {
           ></iframe>
         </noscript>
         {children}
-        <Subscribe />
+
         <Footer />
       </body>
     </html>
