@@ -1,3 +1,4 @@
+import CalendlyButton from "./calendly-link";
 import ContactBanner from "./contact-form";
 
 export default function GetInTouch() {
@@ -15,6 +16,7 @@ export default function GetInTouch() {
             Whether you’re exploring options or ready to dive in, we’re here to
             help make AI simple, approachable, and impactful for your business.
           </p>
+          <CalendlyButton />
         </div>
         <div className="flex justify-end pt-10">
           <ContactBanner />
