@@ -85,10 +85,10 @@ export default function ContactBanner() {
           <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
             <input
               type="text"
-              name="fullName"
+              name="full_name"
               value={formData.full_name}
               onChange={handleChange}
-              placeholder="FIRST NAME*"
+              placeholder="FULL NAME*"
               required
               className="w-full md:w-1/2 p-3 rounded-lg placeholder:text-orange text-[14px] text-orange focus:outline-none focus:ring-2 focus:ring-orange"
             />
