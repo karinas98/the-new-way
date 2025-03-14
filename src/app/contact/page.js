@@ -160,9 +160,6 @@ export default function ContactForm() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  data-sitekey="6LfJBdgqAAAAAFEi3u_lxGFRfpQLo5oqa4le7OKU"
-                  data-callback="onSubmit"
-                  data-action="submit"
                   className={`w-1/2 g-recaptcha h-12 rounded-full transition ${
                     isSubmitting
                       ? "bg-gray-400 cursor-not-allowed"
