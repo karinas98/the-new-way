@@ -81,8 +81,6 @@ export default function ContactForm() {
         throw new Error("Failed to get reCAPTCHA token");
       }
 
-      console.log("Token received:", recaptchaToken); // Debug log
-
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
