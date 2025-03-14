@@ -87,17 +87,14 @@ $data = json_decode($json);
 }
 
 // TO-DO: Replace the token and reCAPTCHA action variables before running the sample.
-try {
-    create_assessment(
-        '6LfJBdgqAAAAAFEi3u_lxGFRfpQLo5oqa4le7OKU',
-        $data->token,
-        'the-new-way',
-        'submit'
-    );
-    echo json_encode(['success' => true]);
-} catch (Exception $e) {
-    http_response_code(400);
-    echo json_encode(['error' => $e->getMessage()]);
-}
+create_assessment(
+   '6LfJBdgqAAAAAFEi3u_lxGFRfpQLo5oqa4le7OKU',
+   $token,
+   'the-new-way-450623',
+   'submit'
+);
+
+header('Content-Type: application/json');
+echo json_encode(['success' => true]);
 ?>
 
