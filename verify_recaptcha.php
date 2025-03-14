@@ -68,7 +68,7 @@ create_assessment(
    '6LfJBdgqAAAAAFEi3u_lxGFRfpQLo5oqa4le7OKU',
    'YOUR_USER_RESPONSE_TOKEN',
    'the-new-way-450623',
-   'YOUR_RECAPTCHA_ACTION'
+   'submit'
 );
 ?>
 

@@ -28,7 +28,7 @@ export default function ContactForm() {
       const script = document.createElement("script");
       script.id = scriptId;
       script.src =
-        "https://www.google.com/recaptcha/api.js?render=6Le0ItgqAAAAAKpUrmAweoPpkn8PBHV_2fjaviSD";
+        "https://www.google.com/recaptcha/api.js?render=6LfJBdgqAAAAAFEi3u_lxGFRfpQLo5oqa4le7OKU";
       script.async = true;
       script.defer = true;
       document.head.appendChild(script);
@@ -58,7 +58,7 @@ export default function ContactForm() {
 
     try {
       const recaptchaToken = await window.grecaptcha.execute(
-        "6Le0ItgqAAAAAKpUrmAweoPpkn8PBHV_2fjaviSD",
+        "6LfJBdgqAAAAAFEi3u_lxGFRfpQLo5oqa4le7OKU",
         { action: "submit" }
       );
 
