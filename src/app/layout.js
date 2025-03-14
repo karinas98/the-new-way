@@ -25,6 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={inter.variable}>
       <head>
+        <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfJBdgqAAAAAFEi3u_lxGFRfpQLo5oqa4le7OKU"></script>
         {/* Google Tag Manager */}
         <script
           async

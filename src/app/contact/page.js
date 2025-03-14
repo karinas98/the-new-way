@@ -37,6 +37,7 @@ export default function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+    document.getElementById("submit").submit();
 
     if (!window.grecaptcha) {
       setStatusMessage("reCAPTCHA failed to load. Please refresh the page.");
@@ -147,12 +148,16 @@ export default function ContactForm() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className={`w-12 h-12 rounded-full transition ${
+              data-sitekey="6LfJBdgqAAAAAFEi3u_lxGFRfpQLo5oqa4le7OKU"
+              data-callback="onSubmit"
+              data-action="submit"
+              className={`w-12 g-recaptcha h-12 rounded-full transition ${
                 isSubmitting
                   ? "bg-gray-400 cursor-not-allowed"
                   : "bg-orange text-white hover:bg-red-800"
               }`}
             >
+              {" "}
               →
             </button>
             {statusMessage && (
