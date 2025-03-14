@@ -57,10 +57,31 @@ export default function ContactForm() {
     }
 
     try {
+      // Check if grecaptcha is loaded and wait for it to be ready
+      if (typeof window.grecaptcha === "undefined" || !window.grecaptcha) {
+        throw new Error("reCAPTCHA failed to load. Please refresh the page.");
+      }
+
+      // Wait for grecaptcha to be ready
+      await new Promise((resolve) => {
+        if (window.grecaptcha.ready) {
+          window.grecaptcha.ready(resolve);
+        } else {
+          resolve();
+        }
+      });
+
+      // Get token
       const recaptchaToken = await window.grecaptcha.execute(
         "6LfJBdgqAAAAAFEi3u_lxGFRfpQLo5oqa4le7OKU",
         { action: "submit" }
       );
+
+      if (!recaptchaToken) {
+        throw new Error("Failed to get reCAPTCHA token");
+      }
+
+      console.log("Token received:", recaptchaToken); // Debug log
 
       const response = await fetch("/api/contact", {
         method: "POST",
@@ -70,6 +91,8 @@ export default function ContactForm() {
           "g-recaptcha-response": recaptchaToken,
         }),
       });
+
+      const responseData = await response.json();
 
       if (response.ok) {
         setStatusMessage("Submitted! Thank you for your interest.");
@@ -82,16 +105,15 @@ export default function ContactForm() {
           message: "",
         });
       } else {
-        const errorData = await response.json();
-        setStatusMessage(`Error: ${errorData.error || "Submission failed"}`);
-        setStatusType("error");
+        throw new Error(responseData.error || "Submission failed");
       }
     } catch (error) {
-      setStatusMessage("Network error. Please try again.");
+      console.error("Form submission error:", error);
+      setStatusMessage(error.message || "Network error. Please try again.");
       setStatusType("error");
+    } finally {
+      setIsSubmitting(false);
     }
-
-    setIsSubmitting(false);
   };
 
   return (
