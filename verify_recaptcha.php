@@ -73,5 +73,8 @@ create_assessment(
    'the-new-way',
    'submit'
 );
+
+header('Content-Type: application/json');
+echo json_encode(['success' => true]);
 ?>
 
