@@ -24,6 +24,9 @@ function create_assessment(
   // TODO: Cache the client generation code (recommended) or call client.close() before exiting the method.
   $client = new RecaptchaEnterpriseServiceClient();
   $projectName = $client->projectName($project);
+$token = $data->token;
+$json = file_get_contents('php://input');
+$data = json_decode($json);
 
   // Set the properties of the event to be tracked.
   $event = (new Event())
@@ -66,8 +69,8 @@ function create_assessment(
 // TO-DO: Replace the token and reCAPTCHA action variables before running the sample.
 create_assessment(
    '6LfJBdgqAAAAAFEi3u_lxGFRfpQLo5oqa4le7OKU',
-   'YOUR_USER_RESPONSE_TOKEN',
-   'the-new-way-450623',
+   $token,
+   'the-new-way',
    'submit'
 );
 ?>
