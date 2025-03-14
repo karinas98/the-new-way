@@ -12,7 +12,7 @@ export default async function handler(req, res) {
   try {
     // Add full URL and log the response
     const verifyResponse = await fetch(
-      "http://new-way.com/verify_recaptcha.php",
+      "http://new-way.ai/verify_recaptcha.php",
       {
         method: "POST",
         headers: {
