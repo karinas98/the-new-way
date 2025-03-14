@@ -70,7 +70,7 @@ $data = json_decode($json);
 create_assessment(
    '6LfJBdgqAAAAAFEi3u_lxGFRfpQLo5oqa4le7OKU',
    $token,
-   'the-new-way',
+   'the-new-way-450623',
    'submit'
 );
 
