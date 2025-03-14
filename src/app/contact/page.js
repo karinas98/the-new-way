@@ -80,7 +80,16 @@ export default function ContactForm() {
       if (!recaptchaToken) {
         throw new Error("Failed to get reCAPTCHA token");
       }
+      const verifyResponse = await fetch("/api/verify-recaptcha", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ token: recaptchaToken }),
+      });
 
+      if (!verifyResponse.ok) {
+        const verifyData = await verifyResponse.json();
+        throw new Error(verifyData.error || "reCAPTCHA verification failed");
+      }
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
