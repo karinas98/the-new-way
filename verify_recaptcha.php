@@ -1,4 +1,24 @@
 <?php
+// Set proper headers
+header('Content-Type: application/json');
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: POST');
+header('Access-Control-Allow-Headers: Content-Type');
+
+// Handle preflight requests
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    exit(0);
+}
+
+// Get the POST data
+$json = file_get_contents('php://input');
+$data = json_decode($json);
+
+if (!$data || !isset($data->token)) {
+    echo json_encode(['error' => 'Token is required']);
+    exit;
+}
+
 require 'vendor/autoload.php';
 
 // Include Google Cloud dependencies using Composer
@@ -67,14 +87,17 @@ $data = json_decode($json);
 }
 
 // TO-DO: Replace the token and reCAPTCHA action variables before running the sample.
-create_assessment(
-   '6LfJBdgqAAAAAFEi3u_lxGFRfpQLo5oqa4le7OKU',
-   $token,
-   'the-new-way-450623',
-   'submit'
-);
-
-header('Content-Type: application/json');
-echo json_encode(['success' => true]);
+try {
+    create_assessment(
+        '6LfJBdgqAAAAAFEi3u_lxGFRfpQLo5oqa4le7OKU',
+        $data->token,
+        'the-new-way',
+        'submit'
+    );
+    echo json_encode(['success' => true]);
+} catch (Exception $e) {
+    http_response_code(400);
+    echo json_encode(['error' => $e->getMessage()]);
+}
 ?>
 
