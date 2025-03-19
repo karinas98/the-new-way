@@ -79,68 +79,98 @@ create_assessment(
 // composer require google/cloud-recaptcha-enterprise
 require 'vendor/autoload.php';
 
+
+<?php
+// Set proper headers
+header('Content-Type: application/json');
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: POST');
+header('Access-Control-Allow-Headers: Content-Type');
+
+// Handle preflight requests
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    exit(0);
+}
+
+// Get the POST data
+$json = file_get_contents('php://input');
+$data = json_decode($json);
+
+if (!$data || !isset($data->token)) {
+    echo json_encode(['success' => false, 'error' => 'Token is required']);
+    exit;
+}
+
+require 'vendor/autoload.php';
+
 use Google\Cloud\RecaptchaEnterprise\V1\RecaptchaEnterpriseServiceClient;
 use Google\Cloud\RecaptchaEnterprise\V1\Event;
 use Google\Cloud\RecaptchaEnterprise\V1\Assessment;
 use Google\Cloud\RecaptchaEnterprise\V1\TokenProperties\InvalidReason;
 
-/**
-* Create an assessment to analyze the risk of a UI action.
-* @param string $siteKey The key ID for the reCAPTCHA key (See https://cloud.google.com/recaptcha/docs/create-key)
-* @param string $token The user's response token for which you want to receive a reCAPTCHA score. (See https://cloud.google.com/recaptcha/docs/create-assessment#retrieve_token)
-* @param string $project Your Google Cloud project ID
-*/
-function create_assessment(
-   string $siteKey,
-   string $token,
-   string $project
-): void {
-// TODO: To avoid memory issues, move this client generation outside
-// of this example, and cache it (recommended) or call client.close()
-// before exiting this method.
-$client = new RecaptchaEnterpriseServiceClient();
-$projectName = $client->projectName($project);
+function create_assessment(string $siteKey, string $token, string $project): array {
+    try {
+        $client = new RecaptchaEnterpriseServiceClient();
+        $projectName = $client->projectName($project);
 
-   $event = (new Event())
-       ->setSiteKey($siteKey)
-       ->setToken($token);
+        $event = (new Event())
+            ->setSiteKey($siteKey)
+            ->setToken($token);
 
-   $assessment = (new Assessment())
-       ->setEvent($event);
+        $assessment = (new Assessment())
+            ->setEvent($event);
 
-   try {
-       $response = $client->createAssessment(
-           $projectName,
-           $assessment
-       );
+        $response = $client->createAssessment(
+            $projectName,
+            $assessment
+        );
 
-       // You can use the score only if the assessment is valid,
-       // In case of failures like re-submitting the same token, getValid() will return false
-       if ($response->getTokenProperties()->getValid() == false) {
-           printf('The CreateAssessment() call failed because the token was invalid for the following reason: ');
-           printf(InvalidReason::name($response->getTokenProperties()->getInvalidReason()));
-       } else {
-           printf('The score for the protection action is:');
-           printf($response->getRiskAnalysis()->getScore());
+        if ($response->getTokenProperties()->getValid() == false) {
+            return [
+                'success' => false,
+                'error' => 'Invalid token: ' . InvalidReason::name($response->getTokenProperties()->getInvalidReason())
+            ];
+        }
 
-           // Optional: You can use the following methods to get more data about the token
-           // Action name provided at token generation.
-           // printf($response->getTokenProperties()->getAction() . PHP_EOL);
-           // The timestamp corresponding to the generation of the token.
-           // printf($response->getTokenProperties()->getCreateTime()->getSeconds() . PHP_EOL);
-           // The hostname of the page on which the token was generated.
-           // printf($response->getTokenProperties()->getHostname() . PHP_EOL);
-       }
-   } catch (exception $e) {
-       printf('CreateAssessment() call failed with the following error: ');
-       printf($e);
-   }
+        // Get the score and return it
+        return [
+            'success' => true,
+            'score' => $response->getRiskAnalysis()->getScore(),
+            'hostname' => $response->getTokenProperties()->getHostname(),
+            'action' => $response->getTokenProperties()->getAction()
+        ];
+
+    } catch (Exception $e) {
+        return [
+            'success' => false,
+            'error' => $e->getMessage()
+        ];
+    } finally {
+        if (isset($client)) {
+            $client->close();
+        }
+    }
 }
 
-// TODO(Developer): Replace the following before running the sample
-create_assessment(
-   '6LfJBdgqAAAAAFEi3u_lxGFRfpQLo5oqa4le7OKU',
-   $token,
-   'the-new-way-450623'
-);
+// Execute the assessment
+try {
+    $result = create_assessment(
+        '6LfJBdgqAAAAAFEi3u_lxGFRfpQLo5oqa4le7OKU',
+        $data->token,
+        'the-new-way-450623'
+    );
+
+    if (!$result['success']) {
+        http_response_code(400);
+    }
+
+    echo json_encode($result);
+
+} catch (Exception $e) {
+    http_response_code(500);
+    echo json_encode([
+        'success' => false,
+        'error' => $e->getMessage()
+    ]);
+}
 ?>
