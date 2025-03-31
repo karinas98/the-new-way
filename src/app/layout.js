@@ -1,5 +1,4 @@
 import Footer from "./components/footer";
-import Script from "next/script";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -35,14 +34,7 @@ export default function RootLayout({ children }) {
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-8NBEMHH5EW"
         />
-        <Script id="google-analytics">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-8NBEMHH5EW');
-          `}
-        </Script>
+
         <link rel="icon" href="/favicon-new-way.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/favicon-new-way.png" />
       </head>
