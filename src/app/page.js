@@ -259,7 +259,11 @@ export default function Home() {
                 href="/what-we-do#integrator"
               >
                 MORE DETAILS
-                <Image alt="more details" src={arrow} className="w-[30px]" />
+                <Image
+                  alt="more details"
+                  src="./assets/arrow.png"
+                  className="w-[30px]"
+                />
               </Link>
             </div>
           </div>
@@ -277,7 +281,7 @@ export default function Home() {
                 href="/what-we-do#agent"
               >
                 MORE DETAILS
-                <image
+                <Image
                   alt="more details"
                   src={arrow}
                   className="w-[20px] lg:w-[30px]"
