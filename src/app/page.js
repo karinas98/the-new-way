@@ -19,25 +19,34 @@ export default function Home() {
             </h1>
           </section>
           <section className="flex flex-col items-center relative -mt-[300px] md:-mt-52">
-            <div className="bg-lightblue hidden md:w-[800px] h-[80px] rounded-full absolute opacity-90"></div>
+            <div className="bg-lightblue hidden md:w-[800px] h-[80px] rounded-full absolute opacity-90" />
 
             <div className="md:flex md:gap-10 md:justify-center md:p-10 md:relative hidden">
               <Link href="/#what-we-offer">
-                <button className="w-[220px] bg-white text-[14px] text-orange py-2 px-4 rounded-full shadow-sm hover:before:bg-orange relative overflow-hidden  shadow-md transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-orange before:transition-all before:duration-500  hover:text-white hover:shadow-orange hover:before:left-0 hover:before:w-full">
+                <button
+                  type="button"
+                  className="w-[220px] bg-white text-[14px] text-orange py-2 px-4 rounded-full shadow-sm hover:before:bg-orange relative overflow-hidden  shadow-md transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-orange before:transition-all before:duration-500  hover:text-white hover:shadow-orange hover:before:left-0 hover:before:w-full"
+                >
                   <span className="relative z-10 font-semibold">
                     IMPLEMENTATION & STRATEGY SUPPORT
                   </span>
                 </button>
               </Link>
               <Link href="/#what-we-offer">
-                <button className="w-[220px]  bg-white text-[14px] text-orange py-2 px-4 rounded-full shadow-sm hover:before:bg-orange relative overflow-hidden  shadow-md transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-orange before:transition-all before:duration-500  hover:text-white hover:shadow-orange hover:before:left-0 hover:before:w-full">
+                <button
+                  type="button"
+                  className="w-[220px]  bg-white text-[14px] text-orange py-2 px-4 rounded-full shadow-sm hover:before:bg-orange relative overflow-hidden  shadow-md transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-orange before:transition-all before:duration-500  hover:text-white hover:shadow-orange hover:before:left-0 hover:before:w-full"
+                >
                   <span className="relative z-10 font-semibold">
                     RESULTS FOCUSED SOLUTIONS
                   </span>
                 </button>
               </Link>
               <Link href="/#what-we-offer">
-                <button className="w-[220px] bg-white text-[14px] text-orange py-2 px-4 rounded-full shadow-sm hover:before:bg-orange relative overflow-hidden  shadow-md transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-orange before:transition-all before:duration-500  hover:text-white hover:shadow-orange hover:before:left-0 hover:before:w-full">
+                <button
+                  type="button"
+                  className="w-[220px] bg-white text-[14px] text-orange py-2 px-4 rounded-full shadow-sm hover:before:bg-orange relative overflow-hidden  shadow-md transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-orange before:transition-all before:duration-500  hover:text-white hover:shadow-orange hover:before:left-0 hover:before:w-full"
+                >
                   <span className="relative z-10 font-semibold">
                     ETHICAL AI <br /> ADVISORY
                   </span>
@@ -82,7 +91,10 @@ export default function Home() {
           </p>
         </div>
         <Link href="/contact">
-          <button className=" mt-10 bg-orange text-[14px] text-lightblue font-bold py-4 px-10 hover:bg-white hover:border-2 hover:border-orange hover:text-orange rounded-full shadow-sm">
+          <button
+            type="button"
+            className=" mt-10 bg-orange text-[14px] text-lightblue font-bold py-4 px-10 hover:bg-white hover:border-2 hover:border-orange hover:text-orange rounded-full shadow-sm"
+          >
             GET IN TOUCH
           </button>
         </Link>
@@ -125,7 +137,7 @@ export default function Home() {
               </h3>
               <p className="text-black">
                 We recommend the best tools and platforms for your needs, done
-                by thourough research and eval, to deliver maximum value and
+                by throughout research and eval, to deliver maximum value and
                 ROI.
               </p>
               <hr className="mt-3" />
@@ -157,11 +169,14 @@ export default function Home() {
           </div>
         </div>
         <Link href="/what-we-do">
-          <button className="ml-[90px] mt-20 bg-orange text-[14px] text-lightblue font-bold py-4 px-10 hover:bg-white hover:border-2 hover:border-orange hover:text-orange rounded-full shadow-sm">
+          <button
+            type="button"
+            className="ml-[90px] mt-20 bg-orange text-[14px] text-lightblue font-bold py-4 px-10 hover:bg-white hover:border-2 hover:border-orange hover:text-orange rounded-full shadow-sm"
+          >
             LEARN MORE
           </button>
         </Link>
-        <div className=" bg-[url('./assets/ways-graphic.png')] bg-cover bg-center h-[500px] w-screen"></div>
+        <div className=" bg-[url('./assets/ways-graphic.png')] bg-cover bg-center h-[500px] w-screen" />
       </section>
       <section className=" flex flex-col justify-center ">
         <div className="flex flex-col md:flex-row justify-between pt-20  lg:pr-[150px] md:pr-[40px] ">

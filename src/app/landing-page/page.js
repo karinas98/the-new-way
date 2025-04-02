@@ -134,13 +134,17 @@ export default function LandingPage() {
                 className="space-y-6 bg-lightblue p-6"
               >
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
-                    What best describe your current AI experience level
+                  <label
+                    htmlFor="aiExperience"
+                    className="block text-sm font-medium text-gray-700 mb-2"
+                  >
+                    What best describes your current AI experience level
                   </label>
                   {["Beginner", "Intermediate", "Advanced"].map((level) => (
                     <label key={level} className="flex items-center mb-2">
                       <input
                         type="radio"
+                        id="aiExperience"
                         name="aiExperience"
                         value={level}
                         checked={formData.aiExperience === level}
@@ -158,7 +162,10 @@ export default function LandingPage() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label
+                    htmlFor="goal"
+                    className="block text-sm font-medium text-gray-700 mb-2"
+                  >
                     What best describes the outcome that you are looking for
                     with AI?
                   </label>
@@ -195,7 +202,10 @@ export default function LandingPage() {
                   ))}
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label
+                    htmlFor="package"
+                    className="block text-sm font-medium text-gray-700 mb-2"
+                  >
                     Which package best descrbes what you are looking for?
                   </label>
                   {packages.map((pkg) => (
@@ -215,7 +225,10 @@ export default function LandingPage() {
                   ))}
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label
+                    htmlFor="companySize"
+                    className="block text-sm font-medium text-gray-700 mb-2"
+                  >
                     What budget range best reflects your plans for AI
                     implementation?
                   </label>

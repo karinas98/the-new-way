@@ -47,18 +47,19 @@ export default function Nav() {
         </div>
 
         {/* Hamburger menu button for mobile & tablets */}
+        {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
         <div
           className="lg:hidden flex items-center pr-20 cursor-pointer"
           onClick={toggleMenu}
         >
-          <button className="text-orange">
-            <span className="block w-7 h-1 bg-orange mb-1 rounded-full"></span>
-            <span className="block w-7 h-1 bg-orange mb-1 rounded-full"></span>
-            <span className="block w-7 h-[4px] bg-orange rounded-full"></span>
+          <button type="button" className="text-orange">
+            <span className="block w-7 h-1 bg-orange mb-1 rounded-full" />
+            <span className="block w-7 h-1 bg-orange mb-1 rounded-full" />
+            <span className="block w-7 h-[4px] bg-orange rounded-full" />
           </button>
         </div>
 
-        <div className="hidden lg:block md:bg-white md:absolute  lg:w-[540px] md:mr-20 md:right-7 md:rounded-full md:p-[38px] md:opacity-90"></div>
+        <div className="hidden lg:block md:bg-white md:absolute  lg:w-[540px] md:mr-20 md:right-7 md:rounded-full md:p-[38px] md:opacity-90" />
       </section>
 
       {/* Mobile & Tablet Navigation Menu */}
@@ -68,6 +69,7 @@ export default function Nav() {
         } absolute top-0 left-0 h-screen w-screen bg-white flex flex-col items-center justify-center lg:hidden`}
       >
         <button
+          type="button"
           className="absolute top-5 right-5 text-orange text-3xl"
           onClick={toggleMenu}
         >

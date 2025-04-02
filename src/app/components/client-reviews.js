@@ -22,9 +22,9 @@ export default function ClientReviews() {
   return (
     <section className="py-16 px-6 md:px-16 lg:px-32 pb-32 flex justify-center items-center">
       <div className="flex flex-col lg:flex-row gap-6 md:gap-8 items-center lg:items-stretch w-full max-w-6xl">
-        {reviews.map((review, index) => (
+        {reviews.map((review) => (
           <div
-            key={index}
+            key={review.clientLink}
             className="bg-lightblue p-12 rounded-[30px] border-[1px] border-orange shadow-xl flex flex-col items-center text-center w-full lg:w-1/2 h-full md:h-[500px] transition-all duration-300 ease-in-out hover:-translate-y-2"
           >
             <p className="text-md md:text-lg font-light text-orange w-full mx-auto flex-1 flex items-center justify-center">

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import OrangeArrow from "@/app/assets/orange-arrow.png";
 import cutGraphic from "@/app/assets/ways-graphic-cut.png";
 
 export default function Subscribe() {
@@ -25,9 +24,12 @@ export default function Subscribe() {
             placeholder="EMAIL"
             className="p-4 w-full border border-orange rounded-md focus:outline-none focus:ring-2 focus:ring-orange"
           />
-          <button className="absolute right-4 top-1/2 transform -translate-y-1/2">
+          <button
+            type="submit"
+            className="absolute right-4 top-1/2 transform -translate-y-1/2"
+          >
             <Image
-              src={OrangeArrow}
+              src="/public/assets/orange-arrow.png"
               alt="Submit and Subscribe"
               width={30}
               height={30}

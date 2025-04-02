@@ -1,5 +1,4 @@
 "use client";
-import Nav from "../components/nav";
 import { useState, useEffect } from "react";
 
 export default function ContactBanner() {

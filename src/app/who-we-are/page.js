@@ -14,7 +14,7 @@ import ClientReviews from "../components/client-reviews";
 export default function WhoWeAre() {
   return (
     <main>
-      <div className="relative bg-[url('./assets/graphic2.png')] bg-cover bg-center md:bg-right-bottom h-screen">
+      <div className="relative bg-[url('/public/assets/graphic2.png')] bg-cover bg-center md:bg-right-bottom h-screen">
         <Nav />
         <section className="h-screen flex flex-col justify-end px-[45px] md:px-[80px]">
           <div className="flex  flex-col lg:flex-row lg:items-center lg:justify-evenly ">
