@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import { useEffect } from "react";
 
 export default function CalendlyButton() {
@@ -20,6 +18,7 @@ export default function CalendlyButton() {
       />
 
       <button
+        type="button"
         onClick={() =>
           Calendly.initPopupWidget({
             url: "https://calendly.com/karina-savoie-new-way/30min?hide_event_type_details=1&primary_color=db4a2b",

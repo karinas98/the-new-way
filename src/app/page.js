@@ -2,7 +2,7 @@
 import Nav from "./components/nav";
 import Image from "next/image";
 import Link from "next/link";
-import Arrow from "@/app/assets/arrow.png";
+import Arrow from "public/assets/arrow.png";
 import GetInTouch from "./components/get-in-touch";
 import FAQSection from "./components/faq-home-section";
 import ClientReviews from "./components/client-reviews";
@@ -10,7 +10,7 @@ import ClientReviews from "./components/client-reviews";
 export default function Home() {
   return (
     <main>
-      <div className="relative bg-[url('./assets/home-hero.jpeg')] bg-cover bg-center lg:bg-left h-screen">
+      <div className="relative bg-[url('public/assets/home-hero.jpeg')] bg-cover bg-center lg:bg-left h-screen">
         <Nav />
         <div className="flex flex-col ">
           <section className="h-screen flex flex-col bg-black bg-opacity-35 lg:bg-transparent justify-center px-[45px] md:pl-[85px]  ">
@@ -176,7 +176,7 @@ export default function Home() {
             LEARN MORE
           </button>
         </Link>
-        <div className=" bg-[url('./assets/ways-graphic.png')] bg-cover bg-center h-[500px] w-screen" />
+        <div className=" bg-[url('public/assets/ways-graphic.png')] bg-cover bg-center h-[500px] w-screen" />
       </section>
       <section className=" flex flex-col justify-center ">
         <div className="flex flex-col md:flex-row justify-between pt-20  lg:pr-[150px] md:pr-[40px] ">

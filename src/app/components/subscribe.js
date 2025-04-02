@@ -1,5 +1,5 @@
 import Image from "next/image";
-import cutGraphic from "@/app/assets/ways-graphic-cut.png";
+import cutGraphic from "public/assets/ways-graphic-cut.png";
 
 export default function Subscribe() {
   return (

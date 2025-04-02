@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import beigeImage from "@/app/assets/logo-beige.png";
-import linkedinLogo from "@/app/assets/linkedin-logo.png";
-import XIcon from "@/app/assets/twitter-icon.png";
-import emailIcon from "@/app/assets/email-icon.png";
+import beigeImage from "public/assets/logo-beige.png";
+import linkedinLogo from "public/assets/linkedin-logo.png";
+import XIcon from "public/assets/twitter-icon.png";
+import emailIcon from "public/assets/email-icon.png";
 
 export default function Footer() {
   return (

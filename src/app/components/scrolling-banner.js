@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef } from "react";
 import Image from "next/image";
-import offeringCarousel from "@/app/assets/what-we-offer-carousel-graphic.png";
+import offeringCarousel from "public/assets/what-we-offer-carousel-graphic.png";
 
 export default function CarouselWithBanner() {
   const bannerRef = useRef(null);

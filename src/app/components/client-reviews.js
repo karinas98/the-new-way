@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import kalroLogo from "@/app/assets/kalro-logo.png";
-import entLogo from "@/app/assets/london-ent-clinic.png";
+import kalroLogo from "public/assets/kalro-logo.png";
+import entLogo from "public/assets/london-ent-clinic.png";
 
 export default function ClientReviews() {
   const reviews = [

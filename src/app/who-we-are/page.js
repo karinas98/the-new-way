@@ -3,18 +3,18 @@
 import Nav from "../components/nav";
 import Image from "next/image";
 import Link from "next/link";
-import keyIcon from "@/app/assets/key-icon.png";
-import lockIcon from "@/app/assets/lock-icon.png";
-import resultsIcon from "@/app/assets/results-icons.png";
-import profilePic from "@/app/assets/profile-karina.png";
-import linkedinBlack from "@/app/assets/linkedin-black.png";
+import keyIcon from "public/assets/key-icon.png";
+import lockIcon from "public/assets/lock-icon.png";
+import resultsIcon from "public/assets/results-icons.png";
+import profilePic from "public/assets/profile-karina.png";
+import linkedinBlack from "public/assets/linkedin-black.png";
 import GetInTouch from "../components/get-in-touch";
 import ClientReviews from "../components/client-reviews";
 
 export default function WhoWeAre() {
   return (
     <main>
-      <div className="relative bg-[url('/public/assets/graphic2.png')] bg-cover bg-center md:bg-right-bottom h-screen">
+      <div className="relative bg-[url('public/assets/graphic2.png')] bg-cover bg-center md:bg-right-bottom h-screen">
         <Nav />
         <section className="h-screen flex flex-col justify-end px-[45px] md:px-[80px]">
           <div className="flex  flex-col lg:flex-row lg:items-center lg:justify-evenly ">

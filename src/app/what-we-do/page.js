@@ -8,7 +8,7 @@ import CalendlyButton from "../components/calendly-link";
 export default function WhatWeDo() {
   return (
     <main>
-      <div className="relative bg-[url('./assets/graphic3.png')] bg-cover bg-center-top ">
+      <div className="relative bg-[url('public/assets/graphic3.png')] bg-cover bg-center-top ">
         <Nav />
         <section className="h-screen flex flex-col justify-center px-[45px] md:px-[120px]">
           <div className="flex flex-col">
