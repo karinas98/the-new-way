@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef } from "react";
 import Image from "next/image";
-import offeringCarousel from "public/assets/what-we-offer-carousel-graphic.png";
+import carousel from "@/app/assets/what-we-offer-carousel-graphic.png";
 
 export default function CarouselWithBanner() {
   const bannerRef = useRef(null);
@@ -9,23 +9,20 @@ export default function CarouselWithBanner() {
   useEffect(() => {
     const banner = bannerRef.current;
     if (banner) {
-      banner.innerHTML += banner.innerHTML; // Duplicate text for infinite scrolling
+      banner.innerHTML += banner.innerHTML;
     }
   }, []);
 
   return (
     <section className="relative bg-lightblue flex justify-center items-center py-20">
-      {/* Container for Centering */}
       <div className="relative w-full flex justify-center">
-        {/* Responsive Image */}
         <Image
-          src={offeringCarousel}
+          src={carousel}
           alt=""
           className="w-full max-w-[3500px] min-w-[768px] object-cover"
           priority
         />
 
-        {/* Scrolling Banner Positioned in the Center */}
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
           <div className="w-full overflow-hidden py-4">
             <div

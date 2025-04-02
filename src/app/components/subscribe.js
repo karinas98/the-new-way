@@ -1,10 +1,9 @@
 import Image from "next/image";
-import cutGraphic from "public/assets/ways-graphic-cut.png";
+import arrow from "@/app/assets/orange-arrow.png";
 
 export default function Subscribe() {
   return (
     <section className="bg-lightblue pl-[40px] pr-[40px] flex flex-col md:flex-row items-center justify-between py-10 px-6 md:px-16 lg:px-32">
-      {/* Left Content */}
       <div className="w-full md:w-1/2 flex flex-col items-start text-left">
         <h2 className="text-orange text-2xl md:text-secondaryheadline font-extrabold">
           STAY IN THE LOOP
@@ -17,7 +16,6 @@ export default function Subscribe() {
           miss out—sign up today!
         </p>
 
-        {/* Input Field & Button */}
         <div className="relative w-full max-w-md mt-6">
           <input
             type="email"
@@ -29,7 +27,7 @@ export default function Subscribe() {
             className="absolute right-4 top-1/2 transform -translate-y-1/2"
           >
             <Image
-              src="/public/assets/orange-arrow.png"
+              src={arrow}
               alt="Submit and Subscribe"
               width={30}
               height={30}
@@ -40,7 +38,7 @@ export default function Subscribe() {
 
       <div className="w-full md:w-1/2 flex justify-center mt-10 md:mt-0">
         <Image
-          src={cutGraphic}
+          src="./assets/ways-graphic-cut.png"
           alt="Graphic"
           className="w-full max-w-[400px] md:max-w-[500px] lg:max-w-[600px] object-contain"
         />

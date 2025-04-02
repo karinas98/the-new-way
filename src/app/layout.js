@@ -24,34 +24,33 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={inter.variable}>
       <head>
-        <head>
-          <meta charSet="UTF-8" />
-          <Script
-            src="//cdn.cookie-script.com/s/e8084cc963c6b0057ae051522dda83b4.js"
-            strategy="beforeInteractive"
-            charset="UTF-8"
-          />
-          <Script
-            src="https://www.google.com/recaptcha/enterprise.js?render=6LfJBdgqAAAAAFEi3u_lxGFRfpQLo5oqa4le7OKU"
-            strategy="afterInteractive"
-          />
-          <Script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-8NBEMHH5EW"
-            strategy="afterInteractive"
-          />
-          <Script id="google-analytics" strategy="afterInteractive">
-            {`
+        <meta charSet="UTF-8" />
+        <Script
+          src="//cdn.cookie-script.com/s/e8084cc963c6b0057ae051522dda83b4.js"
+          strategy="beforeInteractive"
+          charset="UTF-8"
+        />
+        <Script
+          src="https://www.google.com/recaptcha/enterprise.js?render=6LfJBdgqAAAAAFEi3u_lxGFRfpQLo5oqa4le7OKU"
+          strategy="afterInteractive"
+        />
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-8NBEMHH5EW"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-8NBEMHH5EW');
     `}
-          </Script>
-          <link rel="icon" href="/favicon-new-way.ico" sizes="any" />
-          <link rel="apple-touch-icon" href="/favicon-new-way.png" />
-        </head>
+        </Script>
+        <link rel="icon" href="/favicon-new-way.ico" sizes="any" />
+        <link rel="apple-touch-icon" href="/favicon-new-way.png" />
       </head>
+
       <body className="font-sans">
         <noscript>
           <iframe

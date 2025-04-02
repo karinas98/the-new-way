@@ -84,7 +84,7 @@ export default function LandingPage() {
       <nav className="h-[100px] bg-lightblue  w-full top-0 z-50">
         <section className="flex items-center  justify-between">
           <Image
-            src={logo}
+            src="public/assets/logo-orange.png"
             href="/"
             alt="The New Way Logo"
             className="w-[330px] p-[15px] pl-[50px]"
@@ -117,8 +117,8 @@ export default function LandingPage() {
                   <div>
                     <h3 className="font-semibold mb-2">What's Included:</h3>
                     <ul className="list-disc pl-4 space-y-2">
-                      {pkg.features.map((feature, index) => (
-                        <li key={index} className="text-white font-light">
+                      {pkg.features.map((feature) => (
+                        <li key={feature} className="text-white font-light">
                           {feature}
                         </li>
                       ))}

@@ -122,7 +122,7 @@ export default function ContactBanner() {
               placeholder="HOW CAN WE HELP?*"
               required
               className="w-full p-3 rounded-lg text-[14px] text-orange placeholder:text-orange focus:outline-none focus:ring-2 focus:ring-orange h-32"
-            ></textarea>
+            />
 
             <input
               type="hidden"

@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import beigeImage from "public/assets/logo-beige.png";
-import linkedinLogo from "public/assets/linkedin-logo.png";
-import XIcon from "public/assets/twitter-icon.png";
-import emailIcon from "public/assets/email-icon.png";
+import logoBeige from "@/app/assets/logo-beige.png";
+import linkedin from "@/app/assets/linkedin-logo.png";
+import x from "@/app/assets/twitter-icon.png";
+import email from "@/app/assets/email-icon.png";
 
 export default function Footer() {
   return (
@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="flex justify-between items-center">
         <Link href="/">
           <Image
-            src={beigeImage}
+            src={logoBeige}
             alt="New Way logo"
             href="/"
             className="w-[250px]"
@@ -23,20 +23,30 @@ export default function Footer() {
         >
           <Link href="https://www.linkedin.com/in/karina-savoie/">
             <Image
-              src={linkedinLogo}
+              src={linkedin}
               className="w-[40px] h-[40px]"
+              width={10}
+              height={10}
               alt="linkedin profile"
             />
           </Link>
           <Link href="https://x.com/TheAIWhisperer_">
             <Image
-              src={XIcon}
+              src={x}
               className="w-[40px] h-[40px]"
+              width={10}
+              height={10}
               alt="Twitter profile"
             />
           </Link>
           <a href="mailto:karina.savoie@new-way.ai">
-            <Image src={emailIcon} className="w-[40px] h-[40px]" alt="Email" />
+            <Image
+              src={email}
+              className="w-[40px] h-[40px]"
+              alt="Email"
+              width={10}
+              height={10}
+            />
           </a>
         </div>
       </div>

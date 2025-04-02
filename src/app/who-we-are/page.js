@@ -1,20 +1,19 @@
 "use client";
-
 import Nav from "../components/nav";
 import Image from "next/image";
 import Link from "next/link";
-import keyIcon from "public/assets/key-icon.png";
-import lockIcon from "public/assets/lock-icon.png";
-import resultsIcon from "public/assets/results-icons.png";
-import profilePic from "public/assets/profile-karina.png";
-import linkedinBlack from "public/assets/linkedin-black.png";
 import GetInTouch from "../components/get-in-touch";
 import ClientReviews from "../components/client-reviews";
+import lock from "@/app/assets/key-icon.png";
+import result from "@/app/assets/results-icons.png";
+import profile from "@/app/assets/profile-karina.png";
+import key from "@/app/assets/key-icon.png";
+import linkedinBlack from "@/app/assets/linkedin-black.png";
 
 export default function WhoWeAre() {
   return (
     <main>
-      <div className="relative bg-[url('public/assets/graphic2.png')] bg-cover bg-center md:bg-right-bottom h-screen">
+      <div className="relative bg-[url('./assets/graphic2.png')] bg-cover bg-center md:bg-right-bottom h-screen">
         <Nav />
         <section className="h-screen flex flex-col justify-end px-[45px] md:px-[80px]">
           <div className="flex  flex-col lg:flex-row lg:items-center lg:justify-evenly ">
@@ -45,7 +44,7 @@ export default function WhoWeAre() {
             <div className=" mt-7 mb-10 md:flex md:flex-col md:items-center md:text-center ">
               <Image
                 alt="transparency is key"
-                src={keyIcon}
+                src={key}
                 className="w-[60px] pb-5"
               />
               <h3 className="text-orange text-[20px] font-semibold pb-5 2xl:text-[25px]">
@@ -60,7 +59,7 @@ export default function WhoWeAre() {
             </div>
             <div className=" mt-7 mb-10 md:flex md:flex-col md:items-center md:text-center ">
               <Image
-                src={lockIcon}
+                src={lock}
                 alt="Ethics & Privacy Always"
                 className="w-[60px] pb-5"
               />
@@ -74,7 +73,7 @@ export default function WhoWeAre() {
             </div>
             <div className="mt-7 mb-10 md:flex md:flex-col md:items-center md:text-center">
               <Image
-                src={resultsIcon}
+                src={result}
                 alt="Results matter"
                 className="w-[60px] pb-5"
               />
@@ -99,7 +98,7 @@ export default function WhoWeAre() {
       <section className="flex flex-col p-20 md:flex-row md:gap-10 lg:gap-20 md:items-center lg:justify-center">
         <div className="flex flex-col">
           <Image
-            src={profilePic}
+            src={profile}
             alt="Image of Karina"
             className=" rounded-[6px]"
           />
