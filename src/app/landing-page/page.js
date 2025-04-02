@@ -1,5 +1,5 @@
 "use client";
-import logo from "public/assets/logo-orange.png";
+import logo from "@app/assets/logo-orange.png";
 import Image from "next/image";
 
 import { useState } from "react";
@@ -84,7 +84,7 @@ export default function LandingPage() {
       <nav className="h-[100px] bg-lightblue  w-full top-0 z-50">
         <section className="flex items-center  justify-between">
           <Image
-            src="public/assets/logo-orange.png"
+            src={logo}
             href="/"
             alt="The New Way Logo"
             className="w-[330px] p-[15px] pl-[50px]"
