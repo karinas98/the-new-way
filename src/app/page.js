@@ -277,7 +277,7 @@ export default function Home() {
                 href="/what-we-do#agent"
               >
                 MORE DETAILS
-                <Image
+                <image
                   alt="more details"
                   src={arrow}
                   className="w-[20px] lg:w-[30px]"
