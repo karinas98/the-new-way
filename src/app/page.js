@@ -259,7 +259,7 @@ export default function Home() {
                 href="/what-we-do#integrator"
               >
                 MORE DETAILS
-                <Image
+                <img
                   alt="more details"
                   src="./assets/arrow.png"
                   className="w-[30px]"
