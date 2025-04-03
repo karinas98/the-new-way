@@ -259,11 +259,7 @@ export default function Home() {
                 href="/what-we-do#integrator"
               >
                 MORE DETAILS
-                <img
-                  alt="more details"
-                  src="./assets/arrow.png"
-                  className="w-[30px]"
-                />
+                <Image alt="more details" src={arrow} className="w-[30px]" />
               </Link>
             </div>
           </div>
