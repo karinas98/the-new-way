@@ -14,8 +14,8 @@ export default function Home() {
         <Nav />
         <div className="flex flex-col ">
           <section className="h-screen flex flex-col bg-black bg-opacity-35 lg:bg-transparent justify-center px-[45px] md:pl-[85px]  ">
-            <h1 className=" text-[52px] text-white  leading-[60px] md:text-title font-normal lg:text-orange w-full md:w-[90%] lg:w-[50%] xl:w-[35%] 2xl:w-[40%] xl:text-[55px] xl:leading-[70px]">
-              Better AI choices start with better guidance
+            <h1 className=" text-[52px] text-white  leading-[60px] md:text-title font-normal lg:text-black w-full md:w-[90%] lg:w-[50%] xl:w-[35%] 2xl:w-[40%] xl:text-[55px] xl:leading-[70px]">
+              Use AI & Automation to Save Time, Work Smarter, and Lead Better
             </h1>
           </section>
           <section className="flex flex-col items-center relative -mt-[300px] md:-mt-52">
@@ -81,18 +81,20 @@ export default function Home() {
             WHY WE DO THIS
           </h2>
           <p className="pt-5 text-black">
-            AI has the potential to transform industries, but knowing where to
-            begin and how to integrate it into your organisation can be a
-            challenge. Every business, regardless of technical expertise, should
-            have the opportunity to explore what AI can offer.
+            We believe AI shouldn’t be reserved for big tech or complex
+            enterprise teams.
+            <br /> <br /> Our mission is to put AI into the hands of SME leaders
+            — not just as a tool, but as a way to lead smarter, work better, and
+            create more space for what truly matters.
             <br />
-            <br /> We focus on providing ethical, vendor-agnostic guidance to
-            help overcome the common challenges—whether it’s understanding
-            regulations, managing data complexities, training teams, clarifying
-            ROI, or creating a thoughtful plan to get started. <br />
+            <br /> We’ve seen firsthand how overwhelming AI can feel from the
+            outside — all the tools, jargon, and promises. That’s why we focus
+            on cutting through the noise, simplifying what works, and helping
+            leaders build confidence through meaningful wins.
             <br />
-            Our aim is to make AI practical and meaningful, helping
-            organisations keep pace in a rapidly evolving technological world.
+            <br /> Because when leaders understand and use AI themselves, they
+            don’t just transform workflows — they can transform their
+            businesses.
           </p>
         </div>
         <Link href="/contact">
