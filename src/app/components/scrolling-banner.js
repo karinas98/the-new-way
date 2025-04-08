@@ -15,7 +15,7 @@ export default function CarouselWithBanner() {
 
   return (
     <section className="relative bg-lightblue flex justify-center items-center py-20">
-      <div className="relative w-full flex justify-center">
+      <div className="relative overflow-hidden w-full flex justify-center">
         <Image
           src={carousel}
           alt=""
