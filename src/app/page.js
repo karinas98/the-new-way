@@ -62,13 +62,18 @@ export default function Home() {
             WHO WE ARE
           </h2>
           <p className="pt-5 text-black">
-            We’re a forward-thinking AI consultancy dedicated to helping
-            businesses navigate the complexities of AI adoption with clarity and
-            confidence. <br /> <br />
-            Our mission is to help you approach AI’s potential with practical
-            solutions and strategies that drive results, saves time, and
-            enhances efficiency and productivity across your business
-            operations.
+            We’re a forward-thinking AI consultancy dedicated to helping leaders
+            navigate the complexities of AI adoption with clarity and
+            confidence.
+            <br /> <br /> And yes — we help businesses and teams too. <br />
+            <br />
+            We specialize in equipping founders and SME leaders with the
+            knowledge, strategies, and tools to harness AI effectively —
+            empowering them to lead their organizations into the future with
+            confidence. <br />
+            <br /> Our focus is on practical solutions that drive real results:
+            saving time, increasing efficiency, and enhancing productivity in
+            the day-to-day.
           </p>
         </div>
         <div className="mt-[100px]">
