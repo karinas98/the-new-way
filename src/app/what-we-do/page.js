@@ -25,6 +25,38 @@ export default function WhatWeDo() {
             <CalendlyButton />
           </div>
         </section>
+        <section className="flex flex-col items-center relative -mt-[300px] md:-mt-52">
+          <div className="bg-lightblue hidden md:w-[800px] h-[80px] rounded-full absolute opacity-90" />
+
+          <div className="md:flex md:gap-10 md:justify-center md:p-10 md:relative hidden">
+            <Link href="#ignition">
+              <button
+                type="button"
+                className="w-[220px] bg-white text-[14px] text-orange py-4 px-4 rounded-full shadow-sm hover:before:bg-orange relative overflow-hidden  shadow-md transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-orange before:transition-all before:duration-500  hover:text-white hover:shadow-orange hover:before:left-0 hover:before:w-full"
+              >
+                <span className="relative z-10 font-semibold">THE STARTER</span>
+              </button>
+            </Link>
+            <Link href="#navigator">
+              <button
+                type="button"
+                className="w-[220px]  bg-white text-[14px] text-orange py-4 px-4 rounded-full shadow-sm hover:before:bg-orange relative overflow-hidden  shadow-md transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-orange before:transition-all before:duration-500  hover:text-white hover:shadow-orange hover:before:left-0 hover:before:w-full"
+              >
+                <span className="relative z-10 font-semibold">
+                  THE OPERATOR
+                </span>
+              </button>
+            </Link>
+            <Link href="#integrator">
+              <button
+                type="button"
+                className="w-[220px] bg-white text-[14px] text-orange py-4 px-4 rounded-full shadow-sm hover:before:bg-orange relative overflow-hidden  shadow-md transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-orange before:transition-all before:duration-500  hover:text-white hover:shadow-orange hover:before:left-0 hover:before:w-full"
+              >
+                <span className="relative z-10 font-semibold">THE LEADER</span>
+              </button>
+            </Link>
+          </div>
+        </section>
       </div>
 
       <section>
@@ -277,7 +309,7 @@ export default function WhatWeDo() {
                 type="button"
                 className=" flex hover:bg-white hover:border-2 hover:border-orange hover:text-orange  mt-10 bg-orange text-[14px] text-lightblue font-bold py-4 px-10 rounded-full shadow-sm"
               >
-                BOOK A SPOT
+                BOOK A CALL
               </button>
             </Link>
           </div>
@@ -370,7 +402,7 @@ export default function WhatWeDo() {
                 type="button"
                 className=" flex hover:bg-white hover:border-2 hover:border-orange hover:text-orange  mt-10 bg-orange text-[14px] text-lightblue font-bold py-4 px-10 rounded-full shadow-sm"
               >
-                BOOK A SPOT
+                BOOK A CALL
               </button>
             </Link>
           </div>
