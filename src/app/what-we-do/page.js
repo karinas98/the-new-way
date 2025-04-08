@@ -39,19 +39,20 @@ export default function WhatWeDo() {
             OUR PACKAGES
           </h2>
           <div>
-            <div className="flex mt-10 flex-col md:flex-row md:gap-20 lg:gap-40  md:justify-between">
-              <h3 className="text-[45px] text-black lg:text-[60px] mb-10 font-extrabold leading-[55px]">
-                THE <br /> IGNITION
-              </h3>
-              <p className="xl:w-[40%] text-black 2xl:w-[30%]">
-                The "AI Ignition" package is designed to help you understand
-                where your business stands in terms of AI readiness. We analyze
-                the current state of your technology, data, and processes to
-                identify gaps and opportunities for AI adoption. This is the
-                perfect starting point for businesses looking to explore AI with
-                clarity and direction.
-              </p>
-            </div>
+            <h3 className="text-[45px] text-black lg:text-[60px] mb-10 font-extrabold leading-[55px]">
+              THE <br /> STARTER
+            </h3>
+            <p className="xl:w-[40%] text-black 2xl:w-[30%]">
+              <span className="font-bold">
+                Get clarity. Take action. Start your AI journey.
+              </span>
+              <br /> <br />
+              Designed for founders and leaders who are curious about AI but
+              unsure where to begin. We’ll assess where you’re spending time,
+              map where AI can help, and give you clear, personalized next steps
+              to go from curiosity to confidence — no jargon, just practical
+              ideas.
+            </p>
           </div>
           <div className="bg-lightblue lg:gap-10 xl:gap-20 lg:flex mt-20 p-10 lg:p-16 rounded-[20px]">
             <div className="lg:w-[55%] xl:w-[40%]">
@@ -60,21 +61,21 @@ export default function WhatWeDo() {
               </h4>
               <ul className="mt-5 text-black">
                 <li>
-                  <span className="font-bold">In-Depth Assessments</span>
-                  <br /> We evaluate your organisation’s existing
-                  infrastructure, data quality, and workflow efficiency.
+                  <span className="font-bold">Quick-Impact Discovery</span>
+                  <br /> We explore how you currently operate and where you’re
+                  spending the most time.
                 </li>
                 <li className="mt-6">
-                  <span className="font-bold">Collaborative Workshops</span>
-                  <br /> Through structured sessions, we work closely with your
-                  team to uncover key needs and priorities for AI
-                  implementation.
+                  <span className="font-bold">
+                    Foundational Workflow Mapping
+                  </span>
+                  <br /> We break down your day-to-day processes to find areas
+                  where AI can immediately help.
                 </li>
                 <li className="mt-6">
-                  <span className="font-bold">Expert Analysis</span>
-                  <br /> Using proven methodologies, we pinpoint quick-win
-                  opportunities and map out areas where AI can make the most
-                  immediate impact
+                  <span className="font-bold">Strategic Planning</span>
+                  <br /> We pinpoint quick-win opportunities and provide you
+                  with the right tools and steps to get started
                 </li>
               </ul>
             </div>
@@ -85,19 +86,19 @@ export default function WhatWeDo() {
               </h4>
               <ul className="mt-5 text-black">
                 <li>
-                  <span className="font-bold">Comprehensive Reports</span>
-                  <br /> Detailed insights into your current capabilities and
-                  recommendations for improvement.
+                  <span className="font-bold">Opportunity Snapshot</span>
+                  <br />A clear picture of where AI can make a difference for
+                  yourself or in your business.
                 </li>
                 <li className="mt-6">
                   <span className="font-bold">Tailored Roadmaps</span>
-                  <br /> A step-by-step plan outlining actionable strategies for
-                  adopting AI in your operations.
+                  <br /> Recommended use cases tailored to your needs and
+                  priorities.
                 </li>
                 <li className="mt-6">
                   <span className="font-bold">Starter Toolkit</span>
-                  <br /> Resources and tools to help you take the first steps
-                  toward implementation with confidence.
+                  <br /> Prompts, tools, and resources to help you test and
+                  start using AI right away.
                 </li>
               </ul>
             </div>
@@ -108,7 +109,7 @@ export default function WhatWeDo() {
                 type="button"
                 className=" flex  mt-10 bg-orange text-[14px] text-lightblue hover:bg-white hover:border-2 hover:border-orange hover:text-orange font-bold py-4 px-10 rounded-full shadow-sm"
               >
-                BOOK A SPOT
+                BOOK A CALL
               </button>
             </Link>
           </div>
@@ -121,14 +122,18 @@ export default function WhatWeDo() {
                 OUR PACKAGES
               </h2>
               <h3 className="text-[45px] text-black lg:text-[60px] mb-10 mt-20 font-extrabold leading-[55px]">
-                THE <br /> NAVIGATOR
+                THE <br /> OPERATOR
               </h3>
               <p className="xl:w-[40%] text-black 2xl:w-[30%]">
-                The "AI Navigator" package is designed for businesses ready to
-                take the next step in their AI journey. Beyond understanding
-                readiness, this package provides vendor-agnostic guidance and
-                change management strategies to help you implement AI
-                effectively and ensure team alignment.
+                <span className="font-bold">
+                  Turn strategy into systems. Build AI into your day-to-day.
+                </span>
+                <br /> <br />
+                The Operator package is built for founders and teams ready to go
+                beyond ideas and start putting AI to work. We help you redesign
+                key workflows, introduce the right tools, and build practical
+                systems that improve how you operate — all without the
+                overwhelm. This is where strategy meets execution.
               </p>
             </div>
           </div>
@@ -138,25 +143,22 @@ export default function WhatWeDo() {
                 WHAT TO EXPECT
               </h4>
               <ul className="mt-5 text-black">
-                <li>
-                  Everything included in the
-                  <span className="font-bold text-orange">
-                    <br /> IGNITION PACKAGE +
+                <li className="mt-6">
+                  <span className="font-bold">
+                    In-Depth Workflow Assessments
                   </span>
+                  <br /> We evaluate how your current processes run, from
+                  internal ops to outreach.
                 </li>
                 <li className="mt-6">
-                  <span className="font-bold">Guide Your Choices</span>
-                  <br /> Using extensive market research, we provide unbiased
-                  recommendations for the best AI tools and platforms aligned
-                  with your business goals, ensuring you choose solutions that
-                  deliver real impact.
+                  <span className="font-bold">Collaborative Sessions</span>
+                  <br /> We work directly with you (or your team) to define
+                  high-impact improvements.
                 </li>
                 <li className="mt-6">
-                  <span className="font-bold">Enable Your Team</span>
-                  <br /> We develop and deliver change management strategies,
-                  including leadership workshops and hands-on training, to
-                  ensure your team is equipped and confident in embracing new AI
-                  tools and processes.
+                  <span className="font-bold">Applied Strategy</span>
+                  <br /> We don’t just suggest tools — we show how they’ll
+                  actually work for you.
                 </li>
               </ul>
             </div>
@@ -169,19 +171,18 @@ export default function WhatWeDo() {
                 <li>
                   <span className="font-bold">Clear Insights</span>
                   <br /> A clear understanding of your AI readiness and
-                  actionable steps forward.
+                  actionable steps forward. A visual plan showing how your new
+                  AI-optimized workflows will run.
                 </li>
                 <li className="mt-6">
-                  <span className="font-bold">Expert Guidance</span>
-                  <br /> Trusted recommendations for the right tools and
-                  vendors, tailored to your goals.
+                  <span className="font-bold">Custom Systems & Setup</span>
+                  <br /> Built or guided implementation of AI workflows (e.g.
+                  automations, prompts, tools).
                 </li>
                 <li className="mt-6">
-                  <span className="font-bold">Team Readiness</span>
-                  <br /> Change management strategies and training to prepare
-                  your team for successful AI integration. Change management
-                  strategies and training to prepare your team for successful AI
-                  integration.
+                  <span className="font-bold">Time Savings Playbook</span>
+                  <br /> Simple systems and documentation to keep your new
+                  workflows running smoothly.
                 </li>
               </ul>
             </div>
@@ -193,7 +194,7 @@ export default function WhatWeDo() {
                 type="button"
                 className=" flex hover:bg-white hover:border-2 hover:border-orange hover:text-orange  mt-10 bg-orange text-[14px] text-lightblue font-bold py-4 px-10 rounded-full shadow-sm"
               >
-                BOOK A SPOT
+                BOOK A CALL
               </button>
             </Link>
           </div>
@@ -208,7 +209,7 @@ export default function WhatWeDo() {
                 OUR PACKAGES
               </h2>
               <h3 className="text-[45px] text-black lg:text-[60px] mb-10 font-extrabold mt-20 leading-[55px]">
-                THE <br /> INTEGRATOR
+                THE <br /> LEADER
               </h3>
               <p className="xl:w-[40%] text-black 2xl:w-[30%]">
                 The "AI Integrator" package is designed for businesses ready to
@@ -225,25 +226,24 @@ export default function WhatWeDo() {
                 WHAT TO EXPECT
               </h4>
               <ul className="mt-5 text-black">
-                <li>
-                  Everything included in the
-                  <span className="font-bold text-orange">
-                    <br />
-                    NAVIGATOR PACKAGE +
+                <li className="mt-6">
+                  <span className="font-bold">Long-Term Strategy Building</span>
+                  <br /> We co-create a scalable AI vision aligned with your
+                  growth and leadership goals.
+                </li>
+                <li className="mt-6">
+                  <span className="font-bold">
+                    Capability & Governance Planning
                   </span>
+                  <br />
+                  We help you think beyond tools — into mindset, systems, team
+                  enablement, and ethical use.
                 </li>
                 <li className="mt-6">
-                  <span className="font-bold">Facilitate Integration</span>
-                  <br /> Partner with certified developers and vendors to manage
-                  the implementation process. Act as project coordinators,
-                  overseeing milestones and ensuring post-integration success.
-                </li>
-                <li className="mt-6">
-                  <span className="font-bold">Ensure Ethical Governance</span>
-                  <br /> Navigate AI’s legal, ethical, and regulatory landscape
-                  with confidence. Develop governance frameworks, compliance
-                  strategies, and provide team training for sustainable
-                  implementation.
+                  <span className="font-bold">Guided Execution</span>
+                  <br />
+                  From team workshops to internal systems, we’re with you
+                  through rollout and scaling.
                 </li>
               </ul>
             </div>
@@ -254,23 +254,19 @@ export default function WhatWeDo() {
               </h4>
               <ul className="mt-5 text-black">
                 <li>
-                  <span className="font-bold">
-                    Comprehensive Integration Support
-                  </span>
-                  <br /> Hands-on guidance to ensure seamless implementation and
-                  measurable outcomes.
+                  <span className="font-bold">AI Strategy Roadmap</span>
+                  <br /> A forward-looking plan covering immediate use cases and
+                  long-term adoption goals.
                 </li>
                 <li className="mt-6">
-                  <span className="font-bold">Ethical AI Governance</span>
-                  <br /> Strategies, policies, and training to meet legal and
-                  ethical standards.
+                  <span className="font-bold">Prompt + SOP Libraries</span>
+                  <br /> Reusable tools and guidance to keep your business
+                  AI-enabled across content, ops, and more.
                 </li>
                 <li className="mt-6">
-                  <span className="font-bold">
-                    Optional Add-On: Quarterly Review
-                  </span>
-                  <br /> Quarterly review sessions to monitor performance and
-                  refine strategies.
+                  <span className="font-bold">Leadership Confidence</span>
+                  <br /> You’ll walk away with clarity, capability, and the
+                  ability to scale & lead AI internally.
                 </li>
               </ul>
             </div>

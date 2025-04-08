@@ -111,41 +111,40 @@ export default function Home() {
         className=" bg-lightblue pr-[80px] pt-32 md:mt-32"
       >
         <h2 className=" pl-[40px] md:pl-[90px] text-secondaryheadline font-extrabold text-orange">
-          WHAT WE OFFER
+          THE NEW WAY METHOD{" "}
         </h2>
         <div className=" pl-[40px] md:pl-[90px] flex flex-col md:flex-row md:gap-20 items-start">
           <div className="md:mb-10 w-full  md:w-[50%] lg:w-full ">
             <div className=" mt-7 ">
               <h3 className="text-orange mb-2 text-[18px] font-semibold">
-                Tailored AI Solutions
+                Practical AI Support Designed for Founders & SME Leaders
               </h3>
 
               <p className="text-black">
                 We design strategies that align with your unique goals,
-                industry, and operational needs, ensuring AI enhances your
-                business without disrupting it.
+                industry, and operational needs, ensuring AI enhances your your
+                day to day without disrupting it.
               </p>
               <hr className="mt-3" />
             </div>
             <div className=" mt-3">
               <h3 className="text-orange mb-2 text-[18px] font-semibold">
-                Human-Centered Approach
+                AI-Assisted Content & Communication
               </h3>
               <p className="text-black">
-                Our solutions prioritise people, balancing technological
-                advancements with ethical considerations and change management
-                to foster trust and adoption.
+                Build better, faster content with AI-driven prompts, templates,
+                and support tools tailored to your voice, brand, and audience.
               </p>
               <hr className="mt-5" />
             </div>
             <div className=" mt-3">
               <h3 className="text-orange mb-2 text-[18px] font-semibold">
-                Vendor-Agnostic Guidance
+                AI Strategy & Use Case Mapping
               </h3>
               <p className="text-black">
-                We recommend the best tools and platforms for your needs, done
-                by throughout research and eval, to deliver maximum value and
-                ROI.
+                Uncover where AI fits into your business and leadership
+                workflow. We help you identify high-impact areas for automation,
+                delegation, and decision support.
               </p>
               <hr className="mt-3" />
             </div>
@@ -153,12 +152,23 @@ export default function Home() {
           <div className="w-full md:w-[50%] lg:w-full">
             <div className=" mt-3 md:mt-7">
               <h3 className="text-orange mb-2 text-[18px] font-semibold">
-                Simplifying Complexity
+                Workflow Optimization & Automation
               </h3>
               <p className="text-black">
-                We simplify AI with clear, actionable insights and step-by-step
-                support, making advanced technology accessible and
-                understandable.
+                Streamline internal processes, outreach, and reporting using the
+                right AI tools — designed to save time and reduce manual work
+                for yourself or across the team.
+              </p>
+              <hr className="mt-3" />
+            </div>
+            <div className=" mt-3">
+              <h3 className="text-orange mb-2 text-[18px] font-semibold">
+                Readiness Audits & Hands-On Guidance
+              </h3>
+              <p className="text-black">
+                Not sure where to start? We’ll assess your current setup and
+                walk you through simple steps to adopt and scale AI efficiently
+                — leader-first, not tech-first.
               </p>
               <hr className="mt-3" />
             </div>
@@ -191,21 +201,28 @@ export default function Home() {
             OUR PACKAGES
           </h2>
           <p className="md:w-[60%] w-[85%] pl-[40px] md:pl-0 text-black">
-            We offer tailored packages designed to guide businesses through
-            every stage of AI adoption—whether you're just starting or ready to
-            scale. From quick-win assessments to comprehensive implementation
-            and governance strategies, our solutions address your unique
-            challenges.
+            We offer practical, tailored packages to help SME leaders adopt and
+            apply AI with confidence — whether you’re exploring your first use
+            case or ready to scale smarter systems across your business. From
+            quick-start audits to hands-on workflow builds and leadership
+            enablement, each package is built to solve real challenges, save
+            time, and support better decision-making.
           </p>
         </div>
         <div className="xl:pl-[80px] pl-[20px] pr-[20px] gap-5 mt-32 text-center flex flex-col md:flex-row justify-center items-center gap-10 pb-[100px]">
-          <div className="w-[300px] h-[400px] md:h-[430px] lg:h-[400px] flex flex-col justify-between text-white rounded-lg bg-orange p-5">
+          <div className="w-[300px] h-[450px] md:h-[470px] lg:h-[450px] flex flex-col justify-between text-white rounded-lg bg-orange p-5">
             <div>
-              <h3 className="font-bold my-4 ">THE IGNITION</h3>
-              <p className="font-light">AI Readiness Assessment</p>
+              <h3 className="font-bold my-4 ">THE STARTER</h3>
+              <h4 className="font-light text-[15px] pb-[25px]">
+                Founders who are curious about AI but need help getting from 0
+                to 1
+              </h4>
+              <p className="font-light">Readiness Assessment</p>
+              <hr className="my-2" />
+              <p className="font-light">Starter Use Case Plan</p>
               <hr className="my-2" />
               <p className="font-light">
-                Tailored recommendations for quick wins
+                Recommendations & Implementation Guidance
               </p>
             </div>
             <div className="flex justify-end">
@@ -224,14 +241,18 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="w-[300px] h-[400px] md:h-[430px] lg:h-[400px] flex flex-col justify-between text-white rounded-lg bg-orange p-5">
+          <div className="w-[300px] h-[450px] md:h-[470px] lg:h-[450px] flex flex-col justify-between text-white rounded-lg bg-orange p-5">
             <div>
-              <h3 className="font-bold my-4 ">THE NAVIGATOR</h3>
-              <p className="font-light">AI Readiness Assessment</p>
+              <h3 className="font-bold my-4 ">THE OPERATOR</h3>
+              <h4 className="font-light text-[15px] pb-[25px]">
+                Leaders who want to streamline internal ops, client processes,
+                or outreach.
+              </h4>
+              <p className="font-light">Full AI Workflow Audit</p>
               <hr className="my-2" />
-              <p className="font-light">Vendor-Agnostic Solution Guidance </p>
+              <p className="font-light">Strategy & Design</p>
               <hr className="my-2" />
-              <p className="font-light">Change Management Strategy </p>
+              <p className="font-light">Training & Toolkit</p>
             </div>
             <div className="flex justify-end">
               <Link
@@ -247,18 +268,22 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="w-[300px] h-[400px] md:h-[430px] lg:h-[400px] flex flex-col justify-between text-white rounded-lg bg-orange p-5">
+          <div className="w-[300px] h-[450px] md:h-[470px] lg:h-[450px] flex flex-col justify-between text-white rounded-lg bg-orange p-5">
             <div>
-              <h3 className="font-bold my-4 ">THE INTEGRATOR</h3>
+              <h3 className="font-bold my-4 ">THE LEADER</h3>
+              <h4 className="font-light text-[15px] pb-[25px]">
+                Founders ready to scale AI across more of their business — and
+                want a strategic partner
+              </h4>
               <p className="font-light">AI Readiness Assessment</p>
               <hr className="my-2" />
-              <p className="font-light">Vendor-Agnostic Solution Guidance </p>
-              <hr className="my-2" />
-              <p className="font-light">Change Management Strategy </p>
+              <p className="font-light">Implementation support </p>
               <hr className="my-2" />
               <p className="font-light">
-                Governance & Ethical AI Advisory and Training
+                Workshops, Libraries & Long-Term Guidance
               </p>
+              <hr className="my-2" />
+              <p className="font-light">Tailored reporting and Optimisation</p>
             </div>
             <div className="flex justify-end">
               <Link
@@ -270,12 +295,12 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="w-[300px] h-[400px] md:h-[430px] lg:h-[400px] flex flex-col justify-between text-white rounded-lg bg-orange p-5">
+          <div className="w-[300px] h-[450px] md:h-[470px] lg:h-[450px] flex flex-col justify-between text-white rounded-lg bg-orange p-5">
             <div>
               <h3 className="font-bold my-4 ">THE AGENT</h3>
               <p className="font-light">
-                End-to-end project management and bespoke AI solutions tailored
-                to unique business needs
+                End-to-end project management and bespoke AI agents tailored to
+                unique business needs
               </p>
             </div>
             <div className="flex justify-end">
