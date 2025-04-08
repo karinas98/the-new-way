@@ -244,11 +244,16 @@ export default function WhatWeDo() {
                 THE <br /> LEADER
               </h3>
               <p className="xl:w-[40%] text-black 2xl:w-[30%]">
-                The "AI Integrator" package is designed for businesses ready to
-                fully embrace AI integration at an enterprise level. Building on
-                the Navigator Package, this comprehensive solution adds
-                implementation facilitation and governance advisory to ensure a
-                seamless and ethical adoption process.
+                <span className="font-bold">
+                  Scale smarter. Lead with AI strategy and confidence.
+                </span>
+                <br /> <br />
+                The Leader package is designed for founders and leadership teams
+                ready to embed AI across their business with clarity, structure,
+                and long-term vision. From strategy to systems to team
+                enablement, we work with you to scale AI adoption sustainably —
+                turning you into a confident, AI-capable leader who drives real
+                change.
               </p>
             </div>
           </div>
