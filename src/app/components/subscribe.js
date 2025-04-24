@@ -19,6 +19,7 @@ export default function Subscribe() {
         <div className="relative w-full max-w-md mt-6">
           <input
             type="email"
+            required
             placeholder="EMAIL"
             className="p-4 w-full border border-orange rounded-md focus:outline-none focus:ring-2 focus:ring-orange"
           />
