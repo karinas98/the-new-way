@@ -16,11 +16,11 @@ export default function WhatWeDo() {
               WHAT WE DO
             </h1>
             <p className="pt-12 md:w-[75%] xl:w-[45%] text-black">
-              The New Way is your partner for navigating the AI journey—making
-              your operations smoother, your processes smarter, and your growth
-              unstoppable. We’re all about giving your business the tools and
-              strategies to not just keep up, but stand out in a fast-moving
-              world.
+              The New Way is your partner for navigating your way around AI &
+              automation towards making your operations smoother, your processes
+              smarter, and your growth unstoppable. We’re all about giving your
+              business the tools and strategies to not just keep up, but stand
+              out in a fast-moving world.
             </p>
             <CalendlyButton />
           </div>
@@ -53,6 +53,14 @@ export default function WhatWeDo() {
                 className="w-[220px] bg-white text-[14px] text-orange py-4 px-4 rounded-full shadow-sm hover:before:bg-orange relative overflow-hidden  shadow-md transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-orange before:transition-all before:duration-500  hover:text-white hover:shadow-orange hover:before:left-0 hover:before:w-full"
               >
                 <span className="relative z-10 font-semibold">THE LEADER</span>
+              </button>
+            </Link>
+            <Link href="#agent">
+              <button
+                type="button"
+                className="w-[220px] bg-white text-[14px] text-orange py-4 px-4 rounded-full shadow-sm hover:before:bg-orange relative overflow-hidden  shadow-md transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-orange before:transition-all before:duration-500  hover:text-white hover:shadow-orange hover:before:left-0 hover:before:w-full"
+              >
+                <span className="relative z-10 font-semibold">THE AGENT</span>
               </button>
             </Link>
           </div>
