@@ -14,7 +14,7 @@ export default function Home() {
         <Nav />
         <div className="flex flex-col ">
           <section className="h-screen flex flex-col bg-black bg-opacity-35 lg:bg-transparent justify-center px-[45px] md:pl-[85px]  ">
-            <h1 className=" text-[52px] text-white  leading-[60px] md:text-title font-normal lg:text-black w-full md:w-[90%] lg:w-[50%] xl:w-[35%] 2xl:w-[40%] xl:text-[55px] xl:leading-[70px]">
+            <h1 className=" text-[52px] text-white  leading-[60px] md:text-title font-normal lg:text-black w-full md:w-[90%] lg:w-[70%] xl:w-[40%] 2xl:w-[50%] xl:text-[55px] xl:leading-[70px]">
               WE BRING CLARITY TO THE USE OF AI & WORKFLOW AUTOMATION FOR BETTER
               RESULTS
             </h1>
@@ -29,7 +29,7 @@ export default function Home() {
                   className="w-[220px] bg-white text-[14px] text-orange py-2 px-4 rounded-full shadow-sm hover:before:bg-orange relative overflow-hidden  shadow-md transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-orange before:transition-all before:duration-500  hover:text-white hover:shadow-orange hover:before:left-0 hover:before:w-full"
                 >
                   <span className="relative z-10 font-semibold">
-                    STRATEGY & IMPLEMENTATION
+                    STRATEGY FIRST & TECH SECOND
                   </span>
                 </button>
               </Link>
@@ -39,7 +39,7 @@ export default function Home() {
                   className="w-[220px]  bg-white text-[14px] text-orange py-2 px-4 rounded-full shadow-sm hover:before:bg-orange relative overflow-hidden  shadow-md transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-orange before:transition-all before:duration-500  hover:text-white hover:shadow-orange hover:before:left-0 hover:before:w-full"
                 >
                   <span className="relative z-10 font-semibold">
-                    BESPOKE SOLUTIONS
+                    BESPOKE SOLUTIONS <br /> FOR YOUR GOALS
                   </span>
                 </button>
               </Link>
@@ -63,15 +63,17 @@ export default function Home() {
             WHO WE ARE
           </h2>
           <p className="pt-5 text-black">
-            We’re a forward-thinking AI consultancy dedicated to helping leaders
-            navigate the complexities of AI adoption with clarity and
-            confidence.
-            <br /> <br /> And yes — we help businesses and teams too. <br />
+            We’re a forward-thinking AI consultancy dedicated to helping
+            organisations navigate the complexities of AI & Automation adoption
+            with clarity and confidence.
+            <br /> <br />
+            We help identify opportunities, define realistic use cases, create a
+            phased AI and automation roadmap and guide you through the process
+            of implementation and training.
             <br />
-            We specialize in equipping founders and SME leaders with the
-            knowledge, strategies, and tools to harness AI effectively —
-            empowering them to lead their organizations into the future with
-            confidence. <br />
+            <br />
+            We specialize in equipping businesses with the knowledge,
+            strategies, and tools to harness AI & Automation effectively
             <br /> Our focus is on practical solutions that drive real results:
             saving time, increasing efficiency, and enhancing productivity in
             the day-to-day.
@@ -82,20 +84,14 @@ export default function Home() {
             WHY WE DO THIS
           </h2>
           <p className="pt-5 text-black">
-            We believe AI shouldn’t be reserved for big tech or complex
-            enterprise teams.
-            <br /> <br /> Our mission is to put AI into the hands of SME leaders
-            — not just as a tool, but as a way to lead smarter, work better, and
-            create more space for what truly matters.
+            Our mission is to use AI effectively and strategically where it
+            brings value — and show you where AI & workflow automation can truly
+            help.
             <br />
             <br /> We’ve seen firsthand how overwhelming AI can feel from the
             outside — all the tools, jargon, and promises. That’s why we focus
             on cutting through the noise, simplifying what works, and helping
-            leaders build confidence through meaningful wins.
-            <br />
-            <br /> Because when leaders understand and use AI themselves, they
-            don’t just transform workflows — they can transform their
-            businesses.
+            businesses build confidence through meaningful wins.
           </p>
         </div>
         <Link href="/contact">
@@ -118,23 +114,23 @@ export default function Home() {
           <div className="md:mb-10 w-full  md:w-[50%] lg:w-full ">
             <div className=" mt-7 ">
               <h3 className="text-orange mb-2 text-[18px] font-semibold">
-                Practical AI Support Designed for Founders & SME Leaders
+                Personalised Practical AI Support
               </h3>
 
               <p className="text-black">
                 We design strategies that align with your unique goals,
-                industry, and operational needs, ensuring AI enhances your your
-                day to day without disrupting it.
+                industry, and operational needs.
               </p>
               <hr className="mt-3" />
             </div>
             <div className=" mt-3">
               <h3 className="text-orange mb-2 text-[18px] font-semibold">
-                AI-Assisted Content & Communication
+                Assisted Content Creation & Communication
               </h3>
               <p className="text-black">
-                Build better, faster content with AI-driven prompts, templates,
-                and support tools tailored to your voice, brand, and audience.
+                We help educate on building better, faster content through
+                prompt engineering by delivering templates, training and support
+                tools to get back the accurate and quality outputs.
               </p>
               <hr className="mt-5" />
             </div>
@@ -143,9 +139,9 @@ export default function Home() {
                 AI Strategy & Use Case Mapping
               </h3>
               <p className="text-black">
-                Uncover where AI fits into your business and leadership
-                workflow. We help you identify high-impact areas for automation,
-                delegation, and decision support.
+                Uncover where AI & automation fits into your business and your
+                leadership workflow. We help you identify high-impact areas for
+                automation, delegation, and decision support.
               </p>
               <hr className="mt-3" />
             </div>
@@ -202,12 +198,13 @@ export default function Home() {
             OUR PACKAGES
           </h2>
           <p className="md:w-[60%] w-[85%] pl-[40px] md:pl-0 text-black">
-            We offer practical, tailored packages to help SME leaders adopt and
-            apply AI with confidence — whether you’re exploring your first use
-            case or ready to scale smarter systems across your business. From
-            quick-start audits to hands-on workflow builds and leadership
-            enablement, each package is built to solve real challenges, save
-            time, and support better decision-making.
+            We offer practical, tailored packages to help businesses adopt and
+            apply AI with confidence — whether you’re ready to scale smarter
+            systems across your business or need help fixing systems that are
+            creating more problems than solutions. From quick-start audits to
+            hands-on workflow builds and leadership enablement, each package is
+            built to solve real challenges, create better efficiency, and
+            support better decision-making.
           </p>
         </div>
         <div className="xl:pl-[80px] pl-[20px] pr-[20px] gap-5 mt-32 text-center flex flex-col md:flex-row justify-center items-center gap-10 pb-[100px]">
@@ -215,8 +212,7 @@ export default function Home() {
             <div>
               <h3 className="font-bold my-4 ">THE STARTER</h3>
               <h4 className="font-light text-[15px] pb-[25px]">
-                Founders who are curious about AI but need help getting from 0
-                to 1
+                You are curious about AI but need help getting from 0 to 1
               </h4>
               <p className="font-light">Readiness Assessment</p>
               <hr className="my-2" />
@@ -246,10 +242,10 @@ export default function Home() {
             <div>
               <h3 className="font-bold my-4 ">THE OPERATOR</h3>
               <h4 className="font-light text-[15px] pb-[25px]">
-                Leaders who want to streamline internal ops, client processes,
-                or outreach.
+                You an SME and want to streamline internal ops, client
+                processes, or outreach.
               </h4>
-              <p className="font-light">Full AI Workflow Audit</p>
+              <p className="font-light">Full Workflow Audit</p>
               <hr className="my-2" />
               <p className="font-light">Strategy & Design</p>
               <hr className="my-2" />
@@ -273,8 +269,9 @@ export default function Home() {
             <div>
               <h3 className="font-bold my-4 ">THE LEADER</h3>
               <h4 className="font-light text-[15px] pb-[25px]">
-                Founders ready to scale AI across more of their business — and
-                want a strategic partner
+                You are ready to scale and want to be more efficiency and
+                organised about how you tailor your systems — and want a
+                strategic partner
               </h4>
               <p className="font-light">AI Readiness Assessment</p>
               <hr className="my-2" />
@@ -300,8 +297,9 @@ export default function Home() {
             <div>
               <h3 className="font-bold my-4 ">THE AGENT</h3>
               <p className="font-light">
-                End-to-end project management and bespoke AI agents tailored to
-                unique business needs
+                You are an established organisation and need bespoke solutions
+                tailored to fixing your current workflows & systems and want to
+                adapt new strategies based on your unique business needs
               </p>
             </div>
             <div className="flex justify-end">
