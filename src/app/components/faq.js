@@ -35,7 +35,7 @@ const faqCategories = [
         question:
           "Do you build AI tools or help businesses implement existing solutions?",
         answer:
-          "We don’t build AI software—we help you understand, choose, and integrate the best AI solutions for your business, ensuring they align with your goals and processes.",
+          "We can build AI workflows & systems but our primary focus is to help you understand, choose, and integrate the best solutions for your business, ensuring they align with your goals and processes first. Then we can look at what is already available or if a built solution is needed",
       },
       {
         question: "How do you help businesses choose the right AI tools?",
