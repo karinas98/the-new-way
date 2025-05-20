@@ -63,9 +63,9 @@ export default function Home() {
             WHO WE ARE
           </h2>
           <p className="pt-5 text-black">
-            We’re a forward-thinking AI consultancy dedicated to helping
-            organisations navigate the complexities of AI & Automation adoption
-            with clarity and confidence.
+            We’re a forward-thinking AI & systems automation consultancy
+            dedicated to helping organisations navigate the complexities of AI &
+            Automation adoption with clarity and confidence.
             <br /> <br />
             We help identify opportunities, define realistic use cases, create a
             phased AI and automation roadmap and guide you through the process
