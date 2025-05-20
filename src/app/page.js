@@ -15,7 +15,8 @@ export default function Home() {
         <div className="flex flex-col ">
           <section className="h-screen flex flex-col bg-black bg-opacity-35 lg:bg-transparent justify-center px-[45px] md:pl-[85px]  ">
             <h1 className=" text-[52px] text-white  leading-[60px] md:text-title font-normal lg:text-black w-full md:w-[90%] lg:w-[50%] xl:w-[35%] 2xl:w-[40%] xl:text-[55px] xl:leading-[70px]">
-              Use AI & Automation to Save Time, Work Smarter, and Lead Better
+              WE BRING CLARITY TO THE USE OF AI & WORKFLOW AUTOMATION FOR BETTER
+              RESULTS
             </h1>
           </section>
           <section className="flex flex-col items-center relative -mt-[300px] md:-mt-52">
@@ -28,7 +29,7 @@ export default function Home() {
                   className="w-[220px] bg-white text-[14px] text-orange py-2 px-4 rounded-full shadow-sm hover:before:bg-orange relative overflow-hidden  shadow-md transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-orange before:transition-all before:duration-500  hover:text-white hover:shadow-orange hover:before:left-0 hover:before:w-full"
                 >
                   <span className="relative z-10 font-semibold">
-                    IMPLEMENTATION & STRATEGY SUPPORT
+                    STRATEGY & IMPLEMENTATION
                   </span>
                 </button>
               </Link>
@@ -38,7 +39,7 @@ export default function Home() {
                   className="w-[220px]  bg-white text-[14px] text-orange py-2 px-4 rounded-full shadow-sm hover:before:bg-orange relative overflow-hidden  shadow-md transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-orange before:transition-all before:duration-500  hover:text-white hover:shadow-orange hover:before:left-0 hover:before:w-full"
                 >
                   <span className="relative z-10 font-semibold">
-                    RESULTS FOCUSED SOLUTIONS
+                    BESPOKE SOLUTIONS
                   </span>
                 </button>
               </Link>
@@ -48,7 +49,7 @@ export default function Home() {
                   className="w-[220px] bg-white text-[14px] text-orange py-2 px-4 rounded-full shadow-sm hover:before:bg-orange relative overflow-hidden  shadow-md transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-orange before:transition-all before:duration-500  hover:text-white hover:shadow-orange hover:before:left-0 hover:before:w-full"
                 >
                   <span className="relative z-10 font-semibold">
-                    ETHICAL AI <br /> ADVISORY
+                    ETHICS & SECURITY <br /> IN MIND
                   </span>
                 </button>
               </Link>
@@ -111,7 +112,7 @@ export default function Home() {
         className=" bg-lightblue pr-[80px] pt-32 md:mt-32"
       >
         <h2 className=" pl-[40px] md:pl-[90px] text-secondaryheadline font-extrabold text-orange">
-          THE NEW WAY METHOD{" "}
+          THE NEW WAY METHOD
         </h2>
         <div className=" pl-[40px] md:pl-[90px] flex flex-col md:flex-row md:gap-20 items-start">
           <div className="md:mb-10 w-full  md:w-[50%] lg:w-full ">
