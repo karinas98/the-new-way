@@ -89,7 +89,7 @@ export default function WhatWeDo() {
               <br /> <br />
               Designed for founders and leaders who are curious about AI but
               unsure where to begin. We’ll assess where you’re spending time,
-              map where AI can help, and give you clear, personalized next steps
+              map where AI can help, and give you clear, personalised next steps
               to go from curiosity to confidence — no jargon, just practical
               ideas.
             </p>
@@ -169,10 +169,10 @@ export default function WhatWeDo() {
                   Turn strategy into systems. Build AI into your day-to-day.
                 </span>
                 <br /> <br />
-                The Operator package is built for founders and teams ready to go
-                beyond ideas and start putting AI to work. We help you redesign
-                key workflows, introduce the right tools, and build practical
-                systems that improve how you operate — all without the
+                The Operator package is built for businesses ready to go beyond
+                ideas and start putting AI & automation to work. We help you
+                redesign key workflows, introduce the right tools, and build
+                practical systems that improve how you operate — all without the
                 overwhelm. This is where strategy meets execution.
               </p>
             </div>
@@ -253,15 +253,13 @@ export default function WhatWeDo() {
               </h3>
               <p className="xl:w-[40%] text-black 2xl:w-[30%]">
                 <span className="font-bold">
-                  Scale smarter. Lead with AI strategy and confidence.
+                  Scale smarter. Lead with strategy and confidence.
                 </span>
                 <br /> <br />
-                The Leader package is designed for founders and leadership teams
-                ready to embed AI across their business with clarity, structure,
-                and long-term vision. From strategy to systems to team
-                enablement, we work with you to scale AI adoption sustainably —
-                turning you into a confident, AI-capable leader who drives real
-                change.
+                The Leader package is designed for businesses ready to embed AI
+                across their organisation with clarity, structure, and long-term
+                vision. From strategy to systems to team enablement, we work
+                with you to scale AI and workflow adoption sustainably
               </p>
             </div>
           </div>
@@ -273,8 +271,8 @@ export default function WhatWeDo() {
               <ul className="mt-5 text-black">
                 <li className="mt-6">
                   <span className="font-bold">Long-Term Strategy Building</span>
-                  <br /> We co-create a scalable AI vision aligned with your
-                  growth and leadership goals.
+                  <br /> We co-create a scalable vision aligned with your growth
+                  and leadership goals.
                 </li>
                 <li className="mt-6">
                   <span className="font-bold">
@@ -299,7 +297,7 @@ export default function WhatWeDo() {
               </h4>
               <ul className="mt-5 text-black">
                 <li>
-                  <span className="font-bold">AI Strategy Roadmap</span>
+                  <span className="font-bold">Strategy Roadmap</span>
                   <br /> A forward-looking plan covering immediate use cases and
                   long-term adoption goals.
                 </li>
@@ -340,13 +338,12 @@ export default function WhatWeDo() {
                 THE <br /> AGENT
               </h3>
               <p className="xl:w-[40%] text-black 2xl:w-[30%]">
-                The "AI Agent" package is a premium, end-to-end solution for
-                businesses with distinct AI challenges or bold visions. It’s
-                your entry point into the field of AI agents, exploring their
-                potential to transform your operations and align with your
-                goals. Whether it’s designing innovative AI models or managing
-                intricate projects, this package delivers bespoke solutions
-                tailored to your exact needs.
+                The "AI Agent" package is a end-to-end solution for businesses
+                with distinct challenges to solve within the entire
+                organisation. This will be about fixing what is currently not
+                working and exploring the potential to transform your operations
+                and align with your goals. This package delivers bespoke
+                solutions tailored to your exact needs.
               </p>
             </div>
           </div>
@@ -358,12 +355,12 @@ export default function WhatWeDo() {
               <ul className="mt-5 text-black">
                 <li>
                   <span className="font-bold">
-                    Enter the Field of AI Agents
+                    Enter the Field of AI & Systems
                   </span>
                   <br />
                   Partner with industry experts to explore and define the
-                  potential of AI agents for your business, including their
-                  scope and capabilities.
+                  potential of AI and automation for your business, including
+                  their scope and capabilities.
                 </li>
                 <li className="mt-6">
                   <span className="font-bold">Understand Your Vision</span>
@@ -372,8 +369,8 @@ export default function WhatWeDo() {
                 </li>
                 <li className="mt-6">
                   <span className="font-bold">Design Custom Solutions</span>
-                  <br /> Craft bespoke AI strategies and models to align with
-                  your specific objectives.
+                  <br /> Craft bespoke strategies and models to align with your
+                  specific objectives.
                 </li>
                 <li className="mt-6">
                   <span className="font-bold">Process Management</span>
@@ -389,7 +386,7 @@ export default function WhatWeDo() {
               </h4>
               <ul className="mt-5 text-black">
                 <li>
-                  <span className="font-bold">Bespoke AI Solutions </span>
+                  <span className="font-bold">Bespoke Solutions </span>
                   <br />
                   Fully customised models and strategies designed to solve your
                   unique challenges.
@@ -398,13 +395,13 @@ export default function WhatWeDo() {
                   <span className="font-bold">
                     End-to-End Project Oversight
                   </span>
-                  <br /> Comprehensive management of the AI development process,
+                  <br /> Comprehensive management of the development process,
                   ensuring milestones are met and goals are achieved.
                 </li>
                 <li className="mt-6">
                   <span className="font-bold">Expert Collaboration</span>
-                  <br /> Access to top-tier AI developers and industry
-                  specialists, handpicked for your project.
+                  <br /> Access to top-tier developers and industry specialists,
+                  handpicked for your project.
                 </li>
               </ul>
             </div>
