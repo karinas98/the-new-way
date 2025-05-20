@@ -242,7 +242,7 @@ export default function Home() {
             <div>
               <h3 className="font-bold my-4 ">THE OPERATOR</h3>
               <h4 className="font-light text-[15px] pb-[25px]">
-                You an SME and want to streamline internal ops, client
+                You are an SME and want to streamline internal ops, client
                 processes, or outreach.
               </h4>
               <p className="font-light">Full Workflow Audit</p>
