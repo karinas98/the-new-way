@@ -13,10 +13,10 @@ export default function Home() {
       <div className="relative bg-[url('./assets/home-hero.jpeg')] bg-cover bg-center lg:bg-left h-screen">
         <Nav />
         <div className="flex flex-col ">
-          <section className="h-screen flex flex-col bg-black bg-opacity-35 lg:bg-transparent justify-center px-[45px] md:pl-[85px]  ">
-            <h1 className=" text-[52px] text-white  leading-[60px] md:text-title font-normal lg:text-black w-full md:w-[90%] lg:w-[70%] xl:w-[40%] 2xl:w-[50%] xl:text-[55px] xl:leading-[70px]">
-              WE BRING CLARITY TO THE USE OF AI & WORKFLOW AUTOMATION FOR BETTER
-              RESULTS
+          <section className="h-screen flex flex-col bg-black bg-opacity-35 items-center  justify-center px-[45px] md:pl-[85px]  ">
+            <h1 className=" text-[52px] text-white  leading-[60px] md:text-title text-center font-bold w-full md:w-[90%] lg:w-[70%] xl:w-[65%] 2xl:w-[50%] xl:text-[55px] xl:leading-[70px]">
+              We Bring Clarity To The Use of AI & Workflow Automation For Better
+              Results & Efficiency
             </h1>
           </section>
           <section className="flex flex-col items-center relative -mt-[300px] md:-mt-52">
@@ -29,7 +29,7 @@ export default function Home() {
                   className="w-[220px] bg-white text-[14px] text-orange py-2 px-4 rounded-full shadow-sm hover:before:bg-orange relative overflow-hidden  shadow-md transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-orange before:transition-all before:duration-500  hover:text-white hover:shadow-orange hover:before:left-0 hover:before:w-full"
                 >
                   <span className="relative z-10 font-semibold">
-                    STRATEGY FIRST & TECH SECOND
+                    STRATEGY FIRST & <br /> TECH SECOND
                   </span>
                 </button>
               </Link>
