@@ -13,12 +13,12 @@ export default function Home() {
       <div className="relative bg-[url('./assets/home-hero.jpeg')] bg-cover bg-center lg:bg-left h-screen">
         <Nav />
         <div className="flex flex-col ">
-          <section className="h-screen flex flex-col bg-black bg-opacity-60 items-center  justify-center px-[45px] md:pl-[85px]  ">
-            <div className="relative rounded-full px-10 mb-5 font-light  py-2 text-sm/6 md:text-md/6 text-white ring-1 ring-[#ABD2FA]/30 hover:ring-white/20">
+          <section className="h-screen flex flex-col bg-black bg-opacity-60 items-center justify-center px-[45px] md:pl-[85px]  ">
+            <div className="relative rounded-full px-10 mb-5 font-light py-2 text-sm/6 md:text-md/6 text-white ring-1 ring-[#ABD2FA]/30 hover:ring-white/20">
               DISCOVER THE NEW WAY
               <a
                 href="#what-we-offer"
-                className="font-semibold hover:text-white text-[#ABD2FA] ml-5 text-"
+                className="font-semibold hover:text-white text-[#ABD2FA] ml-2 md:ml-5 text-"
               >
                 <span className="absolute inset-0" aria-hidden="true" />
                 LEARN MORE <span aria-hidden="true">&rarr;</span>
