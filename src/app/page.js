@@ -90,7 +90,7 @@ export default function Home() {
           </p>
         </div>
         <div className="xl:pl-[80px] pl-[20px] pr-[20px] gap-5 mt-32 text-center flex flex-col md:flex-row justify-center items-center gap-10 pb-[100px]">
-          <div className=" w-[350px]md:w-[450px] h-[450px] md:h-[470px] lg:h-[450px] flex flex-col justify-between text-white rounded-2xl bg-orange p-5">
+          <div className=" w-[350px] md:w-[450px] h-[450px] md:h-[470px] lg:h-[450px] flex flex-col justify-between text-white rounded-2xl bg-orange p-5">
             <div>
               <h3 className="font-bold my-4 ">Data & Systems Readiness</h3>
               <h4 className="font-light text-[15px] pb-[25px]">
@@ -115,7 +115,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="w-[450px] h-[450px] md:h-[470px] lg:h-[450px] flex flex-col justify-between text-white rounded-2xl bg-orange p-5">
+          <div className="w-[350px] md:w-[450px] h-[450px] md:h-[470px] lg:h-[450px] flex flex-col justify-between text-white rounded-2xl bg-orange p-5">
             <div>
               <h3 className="font-bold my-4 ">
                 Workflow Optimisation & Automation
@@ -141,7 +141,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="w-[450px] h-[450px] md:h-[470px] lg:h-[450px] flex flex-col justify-between text-white rounded-2xl bg-orange p-5">
+          <div className="w-[350px] md:w-[450px] h-[450px] md:h-[470px] lg:h-[450px] flex flex-col justify-between text-white rounded-2xl bg-orange p-5">
             <div>
               <h3 className="font-bold my-4 ">Strategy & Road mapping</h3>
               <h4 className="font-light text-[15px] pb-[25px]">

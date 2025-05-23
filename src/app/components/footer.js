@@ -56,9 +56,6 @@ export default function Footer() {
           <Link className="hover:text-grey" href="/who-we-are">
             WHO WE ARE
           </Link>
-          <Link className="hover:text-grey" href="/what-we-do">
-            WHAT WE DO
-          </Link>
           <Link className="hover:text-grey" href="/contact">
             CONTACT
           </Link>
