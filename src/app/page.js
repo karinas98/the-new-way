@@ -111,7 +111,7 @@ export default function Home() {
                 className="flex items-center rounded-full bg-white text-orange px-5 py-3 gap-5 text-md font-light "
                 href="#contact"
               >
-                BOOK A FREE CONSULT
+                BOOK NOW
               </Link>
             </div>
           </div>
@@ -137,7 +137,7 @@ export default function Home() {
                 className="flex items-center rounded-full bg-white text-orange px-5 py-3 gap-5 text-md font-light "
                 href="#contact"
               >
-                BOOK A FREE CONSULT
+                BOOK NOW
               </Link>
             </div>
           </div>
@@ -167,7 +167,7 @@ export default function Home() {
                 className="flex items-center rounded-full bg-white text-orange px-5 py-3 gap-5 text-md font-light "
                 href="#contact"
               >
-                BOOK A FREE CONSULT
+                BOOK NOW
               </Link>
             </div>
           </div>

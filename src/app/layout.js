@@ -4,9 +4,9 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 
 export const metadata = {
-  title: "The New Way Consultancy",
+  title: "The New Way | Strategic AI & Automation Agency London ",
   description:
-    "We're a forward-thinking AI consultancy dedicated to helping businesses navigate the complexities of AI adoption with clarity and confidence. ",
+    "Practical AI consultancy for businesses. We help you adopt smart systems, automate workflows, and facilitate growth — fast. ",
   icons: {
     icon: "/favicon-new-way.ico",
     shortcut: "/favicon-new-way.ico",
