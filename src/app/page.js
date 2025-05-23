@@ -80,8 +80,8 @@ export default function Home() {
           <p className="md:w-[60%] w-[85%] pl-[40px] md:pl-0 text-black">
             We focus of 3 main stages of growth -{" "}
             <span className="font-bold">
-              Data & Systems Readiness, Workflow Optimisation & Automation and
-              Strategy & AI Road mapping
+              Data & Systems Readiness, Workflow Optimisation & Automation,
+              Strategy & AI Road Mapping
             </span>{" "}
             <br />
             <br />
@@ -143,7 +143,7 @@ export default function Home() {
           </div>
           <div className="w-[350px] md:w-[450px] h-[450px] md:h-[470px] lg:h-[450px] flex flex-col justify-between text-white rounded-2xl bg-orange p-5">
             <div>
-              <h3 className="font-bold my-4 ">Strategy & Road mapping</h3>
+              <h3 className="font-bold my-4 ">Strategy & Road Mapping</h3>
               <h4 className="font-light text-[15px] pb-[25px]">
                 Once your systems are solid, we shift the focus to strategy —
                 defining where automation and AI will drive the most impact, and
