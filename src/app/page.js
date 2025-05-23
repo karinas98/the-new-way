@@ -18,7 +18,7 @@ export default function Home() {
               DISCOVER THE NEW WAY
               <a
                 href="#what-we-offer"
-                className="font-semibold hover:text-white text-[#ABD2FA] ml-2 md:ml-5 text-"
+                className="font-semibold hover:text-white text-[#ABD2FA] ml-6 "
               >
                 <span className="absolute inset-0" aria-hidden="true" />
                 LEARN MORE <span aria-hidden="true">&rarr;</span>
