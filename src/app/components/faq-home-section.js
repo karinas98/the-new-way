@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 const featuredCategory = {
-  category: "YOU MAY ASK YOURSELF",
+  category: "FAQs",
   faqs: [
     {
       question: "What makes The New Way different from other AI consultancies?",

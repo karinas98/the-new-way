@@ -1,27 +1,16 @@
 "use client";
 import { useState, useEffect } from "react";
-import logo from "@/app/assets/logo-beige.png";
 import scrollLogo from "@/app/assets/logo-orange.png";
 
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Nav() {
+export default function NavTwo() {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY >= window.innerHeight);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   useEffect(() => {
     if (isOpen) {
@@ -35,14 +24,14 @@ export default function Nav() {
 
   return (
     <nav
-      className={`h-[130px] fixed w-screen top-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-white shadow-md" : "bg-transparent"
-      }`}
+      className={
+        "h-[130px] fixed w-screen top-0 z-50 transition-all duration-300"
+      }
     >
       <section className="flex items-center justify-between">
         <Link href="/">
           <Image
-            src={scrolled ? scrollLogo : logo}
+            src={scrollLogo}
             alt="The New Way Logo"
             className="w-[330px] p-[15px] pl-[50px]"
           />
@@ -50,9 +39,9 @@ export default function Nav() {
 
         {/* Desktop navigation links */}
         <div
-          className={`hidden lg:flex md:gap-[45px] relative md:mr-[150px] md:z-10 md:font-light md:text-[18px] ${
-            scrolled ? "text-orange" : "text-white"
-          }`}
+          className={
+            "hidden lg:flex md:gap-[45px] relative md:mr-[150px] md:z-10 md:font-light md:text-[18px] "
+          }
         >
           <Link className=" font-medium hover:text-orange" href="/who-we-are">
             WHO WE ARE

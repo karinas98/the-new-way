@@ -1,5 +1,4 @@
 "use client";
-import Nav from "../components/nav";
 import Image from "next/image";
 import Link from "next/link";
 import GetInTouch from "../components/get-in-touch";
@@ -9,12 +8,13 @@ import result from "@/app/assets/results-icons.png";
 import profile from "@/app/assets/profile-karina.png";
 import key from "@/app/assets/key-icon.png";
 import linkedinBlack from "@/app/assets/linkedin-black.png";
+import NavTwo from "../components/nav-two";
 
 export default function WhoWeAre() {
   return (
     <main>
       <div className="relative bg-[url('./assets/graphic2.png')] bg-cover bg-center md:bg-right-bottom h-screen">
-        <Nav />
+        <NavTwo />
         <section className="h-screen flex flex-col justify-end px-[45px] md:px-[80px]">
           <div className="flex  flex-col lg:flex-row lg:items-center lg:justify-evenly ">
             <h1 className=" text-[45px]  md:text-title font-light text-orange xl:text-[60px] ">

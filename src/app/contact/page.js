@@ -1,6 +1,6 @@
 "use client";
-import Nav from "../components/nav";
 import { useState, useEffect } from "react";
+import NavTwo from "../components/nav-two";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -112,7 +112,7 @@ export default function ContactForm() {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-lightblue">
-      <Nav />
+      <NavTwo />
       {isClient ? (
         <div className="lg:w-screen mt-[200px] lg:mt-[20px] flex flex-col lg:items-center xl:justify-center lg:flex-row w-full px-20 lg:px-32 lg:gap-20 xl:gap-40">
           <div className="lg:w-screen mt-[200px] lg:mt-[20px] flex flex-col lg:items-center xl:justify-center lg:flex-row w-full px-20 lg:px-32 lg:gap-20 xl:gap-40">
