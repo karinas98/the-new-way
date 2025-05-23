@@ -14,7 +14,7 @@ export default function Home() {
         <Nav />
         <div className="flex flex-col ">
           <section className="h-screen flex flex-col bg-black bg-opacity-60 items-center  justify-center px-[45px] md:pl-[85px]  ">
-            <div className="relative rounded-full px-10 mb-5 font-light  py-2 text-md/6 text-white ring-1 ring-[#ABD2FA]/30 hover:ring-gray-900/20">
+            <div className="relative rounded-full px-10 mb-5 font-light  py-2 text-sm/6 md:text-md/6 text-white ring-1 ring-[#ABD2FA]/30 hover:ring-white/20">
               DISCOVER THE NEW WAY
               <a
                 href="#what-we-offer"
@@ -90,7 +90,7 @@ export default function Home() {
           </p>
         </div>
         <div className="xl:pl-[80px] pl-[20px] pr-[20px] gap-5 mt-32 text-center flex flex-col md:flex-row justify-center items-center gap-10 pb-[100px]">
-          <div className="w-[450px] h-[450px] md:h-[470px] lg:h-[450px] flex flex-col justify-between text-white rounded-2xl bg-orange p-5">
+          <div className=" w-[350px]md:w-[450px] h-[450px] md:h-[470px] lg:h-[450px] flex flex-col justify-between text-white rounded-2xl bg-orange p-5">
             <div>
               <h3 className="font-bold my-4 ">Data & Systems Readiness</h3>
               <h4 className="font-light text-[15px] pb-[25px]">
