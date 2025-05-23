@@ -71,7 +71,7 @@ export default function Home() {
       </section>
       <section
         id="what-we-offer"
-        className=" bg-lightblue pr-[20px] pt-32 md:mt-32"
+        className=" bg-lightblue md:pr-[20px] pt-32 md:mt-32"
       >
         <div className="flex flex-col md:flex-row justify-between pt-20  lg:pr-[150px] md:pr-[40px] ">
           <h2 className=" pl-[40px] md:pl-[90px] text-secondaryheadline font-extrabold text-orange">
@@ -90,7 +90,7 @@ export default function Home() {
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center gap-10 px-5 mt-32 text-center pb-[100px]">
-          <div className=" w-[360px] md:w-[450px] h-[480px] md:h-[470px] lg:h-[450px] flex flex-col justify-between text-white rounded-2xl bg-orange p-5">
+          <div className=" w-[350px] md:w-[450px] h-[500px] md:h-[470px] lg:h-[450px] flex flex-col justify-between text-white rounded-2xl bg-orange p-5">
             <div>
               <h3 className="font-bold my-4 ">Data & Systems Readiness</h3>
               <h4 className="font-light text-[15px] pb-[25px]">
@@ -115,7 +115,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="w-[350px] md:w-[450px] h-[450px] md:h-[470px] lg:h-[450px] flex flex-col justify-between text-white rounded-2xl bg-orange p-5">
+          <div className="w-[350px] md:w-[450px] h-[500px] md:h-[470px] lg:h-[450px] flex flex-col justify-between text-white rounded-2xl bg-orange p-5">
             <div>
               <h3 className="font-bold my-4 ">
                 Workflow Optimisation & Automation
@@ -141,7 +141,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="w-[350px] md:w-[450px] h-[450px] md:h-[470px] lg:h-[450px] flex flex-col justify-between text-white rounded-2xl bg-orange p-5">
+          <div className="w-[350px] md:w-[450px] h-[500px] md:h-[470px] lg:h-[450px] flex flex-col justify-between text-white rounded-2xl bg-orange p-5">
             <div>
               <h3 className="font-bold my-4 ">Strategy & Road Mapping</h3>
               <h4 className="font-light text-[15px] pb-[25px]">
