@@ -30,7 +30,7 @@ export default function Home() {
               </a>
             </div>
             <h1 className="text-[52px] text-white leading-[60px] md:text-title text-center font-bold w-full md:w-[90%] lg:w-[70%] xl:w-[70%] 2xl:w-[60%] xl:text-[55px] xl:leading-[70px]">
-              What if your data, and decisions all spoke the same language?
+              What if messy systems weren’t blocking your next stage of growth?
             </h1>
             <h2 className="text-[25px] text-white text-center font-extralight w-full md:w-[90%] lg:w-[50%] xl:w-[50%] 2xl:w-[50%] xl:text-[30px]">
               We organize the mess, map the strategy, and build systems that
