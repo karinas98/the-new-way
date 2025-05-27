@@ -2,6 +2,7 @@ import Script from "next/script";
 import Footer from "./components/footer";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import ParallaxClientProvider from "./components/parallaxClient";
 
 export const metadata = {
   title: "The New Way | Strategic AI & Automation Agency London ",
@@ -61,8 +62,10 @@ export default function RootLayout({ children }) {
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
-        {children}
-        <Footer />
+        <ParallaxClientProvider>
+          {children}
+          <Footer />
+        </ParallaxClientProvider>
       </body>
     </html>
   );

@@ -1,39 +1,45 @@
 "use client";
 import Nav from "./components/nav";
-import Image from "next/image";
 import Link from "next/link";
 import GetInTouch from "./components/get-in-touch";
 import FAQSection from "./components/faq-home-section";
 import ClientReviews from "./components/client-reviews";
-import arrow from "@/app/assets/arrow.png";
+import { Parallax } from "react-scroll-parallax";
 
 export default function Home() {
   return (
     <main>
-      <div className="relative bg-[url('./assets/home-hero.jpeg')] bg-cover bg-center lg:bg-left h-screen">
-        <Nav />
-        <div className="flex flex-col ">
-          <section className="h-screen flex flex-col bg-black bg-opacity-60 items-center justify-center px-[45px] md:pl-[85px]  ">
-            <div className="relative rounded-full px-10 mb-5 font-light py-2 text-sm/6 md:text-md/6 text-white ring-1 ring-[#ABD2FA]/30 hover:ring-white/20">
+      <div className="relative h-screen overflow-hidden">
+        <Parallax speed={-20} style={{ height: "100%" }}>
+          <div className="bg-hero z-0 bg-cover bg-center h-screen absolute top-0 left-0 w-full h-full z-0" />
+        </Parallax>
+
+        <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60 z-10" />
+
+        <div className="absolute z-20 top-0 left-0 h-full w-full justify-center flex flex-col">
+          <Nav />
+          <section className="flex-grow flex flex-col items-center justify-center px-[45px] md:pl-[85px] text-center">
+            <div className="hidden md:block relative rounded-full px-10 mb-5 font-light py-2 text-sm/6 md:text-md/6 text-white ring-1 ring-[#ABD2FA]/30 hover:ring-white/20">
               DISCOVER THE NEW WAY
               <a
                 href="#what-we-offer"
-                className="font-semibold hover:text-white text-[#ABD2FA] ml-6 "
+                className="font-semibold hover:text-white text-[#ABD2FA] ml-6"
               >
                 <span className="absolute inset-0" aria-hidden="true" />
                 LEARN MORE <span aria-hidden="true">&rarr;</span>
               </a>
             </div>
-            <h1 className=" text-[52px] text-white  leading-[60px] md:text-title text-center font-bold w-full md:w-[90%] lg:w-[70%] xl:w-[65%] 2xl:w-[50%] xl:text-[55px] xl:leading-[70px]">
+            <h1 className="text-[52px] text-white leading-[60px] md:text-title text-center font-bold w-full md:w-[90%] lg:w-[70%] xl:w-[65%] 2xl:w-[50%] xl:text-[55px] xl:leading-[70px]">
               Get Ready For What's To Come
             </h1>
-            <h2 className=" text-[25px] text-white text-center  font-extralight w-full md:w-[90%] lg:w-[50%] xl:w-[50%] 2xl:w-[50%] xl:text-[30px]">
+            <h2 className="text-[25px] text-white text-center font-extralight w-full md:w-[90%] lg:w-[50%] xl:w-[50%] 2xl:w-[50%] xl:text-[30px]">
               We help you clean up your operations and build the clarity you
               need to scale.
             </h2>
           </section>
         </div>
       </div>
+
       <section className=" pl-[40px] md:pl-[90px] pr-[30px] md:pr-[80px] lg:w-[55%]  h-full w-[90%] pt-60 pb-32 md:pb-10  ">
         <div>
           <h2 className="text-secondaryheadline font-extrabold text-orange">

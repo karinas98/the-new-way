@@ -115,7 +115,7 @@ export default function ContactForm() {
       {isClient ? (
         <div className="w-full px-6 py-20 lg:px-32 flex flex-col items-center justify-center">
           <NavTwo />
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-normal text-orange mb-8 text-center max-w-2xl">
+          <h1 className="text-2xl sm:text-3xl mt-20 lg:text-4xl font-normal text-orange mb-8 text-center max-w-2xl">
             LET'S GET THE CONVERSATION STARTED
           </h1>
 
@@ -137,7 +137,7 @@ export default function ContactForm() {
                 onChange={handleChange}
                 placeholder="LAST NAME*"
                 required
-                className="w-full md:w-1/2 p-3 rounded-lg placeholder:text-orange text-orange text-sm focus:outline-none focus:ring-2 focus:ring-orange"
+                className="w-full md:w-1/2 p-3 mt-5 rounded-lg placeholder:text-orange text-orange text-sm focus:outline-none focus:ring-2 focus:ring-orange"
               />
             </div>
 

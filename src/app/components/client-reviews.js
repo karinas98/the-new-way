@@ -25,9 +25,9 @@ export default function ClientReviews() {
         {reviews.map((review) => (
           <div
             key={review.clientLink}
-            className="bg-lightblue p-12 rounded-[30px] border-[1px] border-orange shadow-xl flex flex-col items-center text-center w-full lg:w-1/2 h-full md:h-[500px] transition-all duration-300 ease-in-out hover:-translate-y-2"
+            className="bg-lightblue p-12 rounded-[30px] border-[1px] border-white shadow-xl flex flex-col items-center text-center w-full lg:w-1/2 h-full md:h-[400px] transition-all duration-300 ease-in-out hover:-translate-y-2"
           >
-            <p className="text-md md:text-lg font-light text-orange w-full mx-auto flex-1 flex items-center justify-center">
+            <p className="text-sm md:text-md font-light text-black w-full mx-auto flex-1 flex items-center justify-center">
               "{review.quote}"
             </p>
             <div>
