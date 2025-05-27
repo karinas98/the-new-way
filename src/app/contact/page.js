@@ -112,90 +112,91 @@ export default function ContactForm() {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-lightblue">
-      <NavTwo />
       {isClient ? (
-        <div className="lg:w-screen mt-[200px] lg:mt-[20px] flex flex-col lg:items-center xl:justify-center lg:flex-row w-full px-20 lg:px-32 lg:gap-20 xl:gap-40">
-          <div className="lg:w-screen mt-[200px] lg:mt-[20px] flex flex-col lg:items-center xl:justify-center lg:flex-row w-full px-20 lg:px-32 lg:gap-20 xl:gap-40">
-            <h1 className="text-3xl md:w-[70%] lg:text-4xl xl:w-[40%] 2xl:w-[30%] font-normal text-orange mb-6">
-              LET'S GET THE CONVERSATION STARTED
-            </h1>
+        <div className="w-full px-6 py-20 lg:px-32 flex flex-col items-center justify-center">
+          <NavTwo />
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-normal text-orange mb-8 text-center max-w-2xl">
+            LET'S GET THE CONVERSATION STARTED
+          </h1>
 
-            <div className="flex mt-10 lg:w-[90%] xl:w-[40%] 2xl:w-[30%] flex-col">
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
-                  <input
-                    type="text"
-                    name="first_name"
-                    value={formData.first_name}
-                    onChange={handleChange}
-                    placeholder="FIRST NAME*"
-                    required
-                    className="w-full md:w-1/2 p-3 rounded-lg placeholder:text-orange text-[14px] text-orange focus:outline-none focus:ring-2 focus:ring-orange"
-                  />
-                  <input
-                    type="text"
-                    name="last_name"
-                    value={formData.last_name}
-                    onChange={handleChange}
-                    placeholder="LAST NAME*"
-                    required
-                    className="w-full md:w-1/2 p-3 rounded-lg placeholder:text-orange text-[14px] text-orange focus:outline-none focus:ring-2 focus:ring-orange"
-                  />
-                </div>
-                <input
-                  type="text"
-                  name="company"
-                  value={formData.company}
-                  onChange={handleChange}
-                  placeholder="COMPANY NAME"
-                  className="w-full p-3 rounded-lg placeholder:text-orange text-[14px] text-orange focus:outline-none focus:ring-2 focus:ring-orange"
-                />
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  placeholder="EMAIL*"
-                  required
-                  className="w-full p-3 rounded-lg placeholder:text-orange text-[14px] text-orange focus:outline-none focus:ring-2 focus:ring-orange"
-                />
-                <textarea
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  placeholder="HOW CAN WE HELP?*"
-                  required
-                  className="w-full p-3 rounded-lg text-[14px] text-orange placeholder:text-orange focus:outline-none focus:ring-2 focus:ring-orange h-32"
-                ></textarea>
-
-                <input
-                  type="hidden"
-                  name="g-recaptcha-response"
-                  id="g-recaptcha-response"
-                />
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className={`w-1/2 g-recaptcha h-12 rounded-full transition ${
-                    isSubmitting
-                      ? "bg-gray-400 cursor-not-allowed"
-                      : "bg-orange text-white hover:bg-red-800"
-                  }`}
-                >
-                  SUBMIT
-                </button>
-                {statusMessage && (
-                  <p
-                    className={
-                      statusType === "success" ? "text-gray-700" : "text-orange"
-                    }
-                  >
-                    {statusMessage}
-                  </p>
-                )}
-              </form>
+          <form onSubmit={handleSubmit} className="w-full max-w-xl space-y-4">
+            <div className="flex flex-col md:flex-row md:space-x-4">
+              <input
+                type="text"
+                name="first_name"
+                value={formData.first_name}
+                onChange={handleChange}
+                placeholder="FIRST NAME*"
+                required
+                className="w-full md:w-1/2 p-3 rounded-lg placeholder:text-orange text-orange text-sm focus:outline-none focus:ring-2 focus:ring-orange"
+              />
+              <input
+                type="text"
+                name="last_name"
+                value={formData.last_name}
+                onChange={handleChange}
+                placeholder="LAST NAME*"
+                required
+                className="w-full md:w-1/2 p-3 rounded-lg placeholder:text-orange text-orange text-sm focus:outline-none focus:ring-2 focus:ring-orange"
+              />
             </div>
-          </div>
+
+            <input
+              type="text"
+              name="company"
+              value={formData.company}
+              onChange={handleChange}
+              placeholder="COMPANY NAME"
+              className="w-full p-3 rounded-lg placeholder:text-orange text-orange text-sm focus:outline-none focus:ring-2 focus:ring-orange"
+            />
+
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="EMAIL*"
+              required
+              className="w-full p-3 rounded-lg placeholder:text-orange text-orange text-sm focus:outline-none focus:ring-2 focus:ring-orange"
+            />
+
+            <textarea
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              placeholder="HOW CAN WE HELP?*"
+              required
+              className="w-full p-3 rounded-lg placeholder:text-orange text-orange text-sm focus:outline-none focus:ring-2 focus:ring-orange h-32"
+            />
+
+            <input
+              type="hidden"
+              name="g-recaptcha-response"
+              id="g-recaptcha-response"
+            />
+
+            <button
+              type="submit"
+              disabled={isSubmitting}
+              className={`w-full sm:w-1/2 h-12 rounded-full transition ${
+                isSubmitting
+                  ? "bg-gray-400 cursor-not-allowed"
+                  : "bg-orange text-white hover:bg-red-800"
+              }`}
+            >
+              SUBMIT
+            </button>
+
+            {statusMessage && (
+              <p
+                className={
+                  statusType === "success" ? "text-gray-700" : "text-orange"
+                }
+              >
+                {statusMessage}
+              </p>
+            )}
+          </form>
         </div>
       ) : (
         <div className="flex items-center justify-center min-h-screen">
