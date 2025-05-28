@@ -182,7 +182,7 @@ export default function Home() {
       </section>
 
       <section className=" bg-white md:mt-[80px] ">
-        <h2 className="text-orange text-secondaryheadline font-extrabold text-center md:text-left md:pl-[90px] ">
+        <h2 className="text-orange text-secondaryheadline pt-10 font-extrabold text-center md:text-left md:pl-[90px] ">
           WHAT OUR CLIENTS SAY
         </h2>
         <ClientReviews />
