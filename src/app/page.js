@@ -29,7 +29,7 @@ export default function Home() {
                 LEARN MORE <span aria-hidden="true">&rarr;</span>
               </a>
             </div>
-            <h1 className="text-[30px] text-white leading-[40px] md:text-title text-center font-bold w-full md:w-[90%] lg:w-[70%] xl:w-[70%] 2xl:w-[60%] xl:text-[55px] xl:leading-[70px]">
+            <h1 className="text-[35px] text-white leading-[35px] md:text-title pb-20 text-center font-bold w-full md:w-[90%] lg:w-[70%] xl:w-[70%] 2xl:w-[60%] xl:text-[55px] xl:leading-[70px]">
               What if messy systems weren’t blocking your next stage of growth?
             </h1>
             <h2 className="text-[25px] text-white text-center font-extralight w-full md:w-[90%] lg:w-[50%] xl:w-[50%] 2xl:w-[50%] xl:text-[30px]">
